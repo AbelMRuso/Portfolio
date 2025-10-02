@@ -1,0 +1,26 @@
+.contenair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+    padding: 2em;
+    /* background-color: grey; */
+}
+
+img {
+    border-radius: 50%;
+    border: solid;
+    border-color: var(--color-accent);
+    height: 14em;
+    width: 14em;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 4em;
+    color: var(--color-accent);
+}
+
+h2 {
+    font-size: 2em;
+}

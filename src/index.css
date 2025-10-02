@@ -39,7 +39,7 @@ body {
     min-height: 100vh;
     line-height: 1.5;
     background-color: var(--color-bg);
-    color: var(--color-text);
+    color: var(--color-text-secondary);
     font-family: "Inter", system-ui, sans-serif;
 }
 

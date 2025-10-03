@@ -4,7 +4,7 @@ import styles from "../hero/Hero.module.scss";
 function Hero() {
     return (
         <section className={styles.contenair}>
-            <img src={profil} alt="Image de profil" />
+            <img className={styles.heroImg} src={profil} alt="Image de profil" />
             <div>
                 <h1>Abel Martínez Ruso</h1>
                 <h2>Développeur full stack</h2>

@@ -17,6 +17,7 @@
     --color-text-secondary: #a1a1aa;
     --color-accent: #8b5cf6;
     --color-accent-light: #c084fc;
+    --color-link: #ebcd45;
 }
 
 * {
@@ -27,8 +28,9 @@
 
 a {
     font-weight: 500;
-    color: var(--color-accent);
+    color: var(--color-link);
     text-decoration: inherit;
+    cursor: pointer;
 }
 a:hover {
     color: var(--color-accent-light);

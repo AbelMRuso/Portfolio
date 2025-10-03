@@ -4,7 +4,7 @@ function CardFormation({ title, subtitle, date, children, layout = "side" }) {
     return (
         <article className={`${styles.card} ${styles[layout]}`}>
             <div className={styles.contenair}>
-                <h3 className={styles.title}>{title}</h3>
+                <h4 className={styles.title}>{title}</h4>
                 {subtitle && <p>{subtitle}</p>}
                 {date && <span>{date}</span>}
             </div>

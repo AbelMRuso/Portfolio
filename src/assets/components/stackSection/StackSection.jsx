@@ -1,12 +1,25 @@
 import CardFormation from "../formation-card/CardFormation";
 import openclassroomLogo from "../../images/openclassrooms_logo.png";
 import styles from "../formation-card/CardFormation.module.scss";
-import { FaCss3, FaPaintBrush, FaHtml5, FaReact, FaServer, FaNodeJs, FaDatabase, FaTools, FaGithub } from "react-icons/fa";
+import {
+    FaCss3,
+    FaPaintBrush,
+    FaHtml5,
+    FaReact,
+    FaServer,
+    FaNodeJs,
+    FaDatabase,
+    FaTools,
+    FaGithub,
+    FaSitemap,
+    FaCode,
+    FaFigma,
+} from "react-icons/fa";
 import stackStyles from "../stackSection/StackSection.module.scss";
 
 function StackSection() {
     return (
-        <section>
+        <section className={stackStyles.sectionContenair}>
             <h2 className={stackStyles.centerContent}>Formation et stack technologique</h2>
             <div className={stackStyles.contenair}>
                 <div className={stackStyles.centerContent}>
@@ -38,7 +51,7 @@ function StackSection() {
 
                         <div className={styles.tech}>
                             <FaReact className={styles.icons} />
-                            <span>REACT</span>
+                            <span>React</span>
                         </div>
                     </CardFormation>
 
@@ -53,12 +66,12 @@ function StackSection() {
                     >
                         <div className={styles.tech}>
                             <FaNodeJs className={styles.icons} />
-                            <span>NODE + EXPRESS</span>
+                            <span>Node + Express</span>
                         </div>
 
                         <div className={styles.tech}>
                             <FaDatabase className={styles.icons} />
-                            <span>MONGODB</span>
+                            <span>MongoDB</span>
                         </div>
                     </CardFormation>
 
@@ -77,8 +90,18 @@ function StackSection() {
                         </div>
 
                         <div className={styles.tech}>
-                            <FaGithub className={styles.icons} />
-                            <span>MONGODB</span>
+                            <FaSitemap className={styles.icons} />
+                            <span>Notion</span>
+                        </div>
+
+                        <div className={styles.tech}>
+                            <FaCode className={styles.icons} />
+                            <span>VSCode</span>
+                        </div>
+
+                        <div className={styles.tech}>
+                            <FaFigma className={styles.icons} />
+                            <span>Figma</span>
                         </div>
                     </CardFormation>
                 </div>

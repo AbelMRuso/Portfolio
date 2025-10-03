@@ -1,7 +1,6 @@
 .contenair {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: grey;
 }
 
 .centerContent {
@@ -9,4 +8,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.sectionContenair {
+    margin-top: 2em;
 }

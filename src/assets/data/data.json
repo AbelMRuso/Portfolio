@@ -1,0 +1,28 @@
+[
+    {
+        "titre": "Portfolio Web",
+        "description": "Un site personnel pour présenter mes projets et mon expérience en développement web.",
+        "contexte": "Projet réalisé dans le cadre de la formation en développement web.",
+        "objectifs": "Concevoir et développer un portfolio responsive avec React et SCSS.",
+        "technologies": ["React", "SCSS", "JavaScript"],
+        "competencesDeveloppees": ["Componentisation avec React", "Gestion d’état avec hooks", "Bonnes pratiques avec SCSS Modules"],
+        "resultat": "Un portfolio moderne, responsive et optimisé pour les appareils mobiles.",
+        "ameliorations": "Implémenter un mode sombre et ajouter des animations pour améliorer l’expérience utilisateur.",
+        "mainImg": "/images/image_test.png",
+        "thumbnails": ["/images/image_test2.png", "/images/image_test2.png", "/images/image_test2.png"],
+        "date": "Avril"
+    },
+    {
+        "titre": "E-commerce",
+        "description": "Boutique en ligne avec panier d’achats et système de paiements.",
+        "contexte": "Projet pratique pour simuler une plateforme de commerce électronique.",
+        "objectifs": "Créer une plateforme avec gestion des produits, panier et paiements simulés.",
+        "technologies": ["HTML", "CSS", "Node.js", "MongoDB"],
+        "competencesDeveloppees": ["Conception de base de données", "Mise en place d’une API REST", "Intégration frontend-backend"],
+        "resultat": "Application fonctionnelle avec panier persistant et système d’authentification.",
+        "ameliorations": "Ajouter une passerelle de paiement réelle et optimiser la recherche de produits.",
+        "mainImg": "/images/image_test.png",
+        "thumbnails": ["/images/image_test2.png", "/images/image_test2.png", "/images/image_test2.png"],
+        "date": "Juin"
+    }
+]

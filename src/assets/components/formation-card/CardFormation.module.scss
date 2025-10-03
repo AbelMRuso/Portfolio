@@ -27,10 +27,12 @@
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    max-height: 6em;
-    max-width: 6em;
+    border-radius: 50%;
+    border: solid;
+    border-color: var(--color-accent);
+    height: 6em;
+    width: 6em;
+    object-fit: cover;
 }
 
 .paintBrush {

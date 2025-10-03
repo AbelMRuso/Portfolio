@@ -1,0 +1,10 @@
+.title {
+    text-align: center;
+}
+
+.projectsContenair {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4em;
+}

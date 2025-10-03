@@ -1,5 +1,5 @@
 import Hero from "./assets/components/hero/Hero";
-import ProjectCard from "./assets/components/project-card/ProjectCard";
+import ProjectSection from "./assets/components/projectSection/ProjectSection";
 import StackSection from "./assets/components/stackSection/StackSection";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
         <>
             <Hero></Hero>
             <StackSection />
-            <ProjectCard />
+            <ProjectSection />
         </>
     );
 }

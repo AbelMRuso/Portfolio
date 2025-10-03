@@ -12,9 +12,9 @@ function ProjectSection() {
                         key={index}
                         mainImg={project.mainImg}
                         thumbnails={project.thumbnails}
-                        description={project.descripcion}
+                        description={project.description}
                         technologies={project.technologies}
-                        date={`${project.date}  2025`}
+                        date={project.date}
                     />
                 ))}
             </div>

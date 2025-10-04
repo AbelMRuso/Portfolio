@@ -7,7 +7,7 @@ function Hero() {
             <img className={styles.heroImg} src={profil} alt="Image de profil" />
             <div>
                 <h1>Abel Martínez Ruso</h1>
-                <h2>Développeur full stack</h2>
+                <h2 className={styles.subtitle}>Développeur full stack</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non beatae voluptatem illum ipsum</p>
             </div>
         </section>

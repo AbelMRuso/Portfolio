@@ -2,8 +2,16 @@
     text-align: center;
 }
 
+.sectionContenair {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 4em;
+}
+
 .projectsContenair {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 4em;

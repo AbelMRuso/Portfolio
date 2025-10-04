@@ -10,7 +10,8 @@
         "ameliorations": "Ajouter des animations et interactions pour améliorer l'expérience utilisateur.",
         "mainImg": "/images/Booki1.png",
         "thumbnails": ["/images/Booki2.png", "/images/Booki3.png", "/images/Booki4.png"],
-        "date": "Mars 2025"
+        "date": "Avril 2025",
+        "categories": ["front"]
     },
     {
         "titre": "Shopie Bluel",
@@ -23,7 +24,8 @@
         "ameliorations": "Ajouter notifications et validations plus avancées pour l'utilisateur.",
         "mainImg": "/images/sophieCover.png",
         "thumbnails": ["/images/sophie1.png", "/images/sophie3.png", "/images/sophie4.png"],
-        "date": "Avril 2025"
+        "date": "Mai 2025",
+        "categories": ["front"]
     },
     {
         "titre": "Nina Carducci",
@@ -36,11 +38,12 @@
         "ameliorations": "Ajouter animations et interactions pour améliorer l'expérience visuelle.",
         "mainImg": "/images/nina-cover.png",
         "thumbnails": ["/images/nina-1.png", "/images/nina-2.png", "/images/nina-3.png"],
-        "date": "Mai 2025"
+        "date": "Juin 2025",
+        "categories": ["front"]
     },
     {
         "titre": "Kasa_Fr",
-        "description": "Site web de réservations de vacances style Airbnb réalisé avec React.",
+        "description": "Plateforme de réservation de vacances inspirée d’Airbnb. Interface interactive avec menus, évaluations, fiches et carrousel d’images.",
         "contexte": "Projet pratique pour apprendre React et la gestion d'état.",
         "objectifs": "Créer un site dynamique avec composants React réutilisables.",
         "technologies": ["React", "SCSS", "JavaScript"],
@@ -49,19 +52,21 @@
         "ameliorations": "Ajouter animations et transitions pour améliorer l'expérience utilisateur.",
         "mainImg": "/images/kasa-cover.png",
         "thumbnails": ["/images/kasa-1.png", "/images/kasa-2.png", "/images/kasa-3.png"],
-        "date": "Juin 2025"
+        "date": "Juillet 2025",
+        "categories": ["front"]
     },
     {
         "titre": "Mon vieux grimoire",
         "description": "Page web de valorisation de livres avec backend Node, Express et MongoDB.",
         "contexte": "Projet complet fullstack pour gérer la collection et les avis des utilisateurs.",
         "objectifs": "Créer un backend complet et connecter avec le frontend pour CRUD livres.",
-        "technologies": ["Node.js", "Express", "MongoDB", "HTML", "CSS", "JavaScript"],
+        "technologies": ["Node.js", "Express", "MongoDB", "JavaScript"],
         "competencesDeveloppees": ["Backend CRUD", "Connexion frontend-backend", "Gestion base de données"],
         "resultat": "Application complète avec gestion de livres et avis utilisateurs.",
         "ameliorations": "Ajouter authentification et notifications pour améliorer l'expérience utilisateur.",
         "mainImg": "/images/grimoire-cover.png",
         "thumbnails": ["/images/grimoire-1.png", "/images/grimoire-2.png", "/images/grimoire-3.png"],
-        "date": "Juillet 2025"
+        "date": "Aout 2025",
+        "categories": ["back"]
     }
 ]

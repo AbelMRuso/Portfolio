@@ -1,0 +1,44 @@
+import { FaTimes } from "react-icons/fa";
+import styles from "../modal/Modal.module.scss";
+
+function Modal({ isOpen, onClose, project }) {
+    if (!isOpen) return null;
+
+    return (
+        <div className={styles.overlay} onClick={onClose}>
+            <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+                <button className={styles.closeButton} onClick={onClose}>
+                    <FaTimes />
+                </button>
+
+                <h2>Titre du projet: {project.titre}</h2>
+                <p>
+                    <strong>Contexte :</strong> {project.contexte}
+                </p>
+                <p>
+                    <strong>Objectifs :</strong> {project.objectifs}
+                </p>
+                <p>
+                    <strong>Compétences développées:</strong>
+                    <ul className={styles.ul}>
+                        {project.competences.map((competence, index) => (
+                            <li key={index}>{competence}</li>
+                        ))}
+                    </ul>
+                </p>
+                <p>
+                    <strong>Code du projet: </strong>
+                    <a target="_blank" className={styles.lien} href={project.resultat}>
+                        Lien vers le repository GitHub
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Perspectives d'amélioration:</strong> {project.ameliorations}
+                </p>
+            </div>
+        </div>
+    );
+}
+
+export default Modal;

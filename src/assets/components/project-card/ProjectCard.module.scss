@@ -100,11 +100,21 @@
 .infoContenair {
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
     background-color: var(--color-bg-secondary);
     height: 3em;
 }
 
 .text {
     font-size: 0.8em;
+}
+
+.infoButton {
+    border: none;
+    background-color: transparent;
+    color: var(--color-link);
+}
+
+.infoButton:hover {
+    background-color: var(--color-accent-light);
 }

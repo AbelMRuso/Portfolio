@@ -2,7 +2,7 @@ import styles from "./ProjectCard.module.scss";
 import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 
-function ProjectCard({ mainImg, thumbnails, description, technologies, date }) {
+function ProjectCard({ mainImg, thumbnails, description, technologies, date, onOpenModal }) {
     const [selectedImg, setSelectedImg] = useState(mainImg);
 
     return (
@@ -38,7 +38,15 @@ function ProjectCard({ mainImg, thumbnails, description, technologies, date }) {
                 {/* Información extra */}
                 <div className={styles.infoContenair}>
                     <p>{date}</p>
-                    <a href="#">+ d'Info</a>
+                    <button
+                        className={styles.infoButton}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            onOpenModal();
+                        }}
+                    >
+                        + d'Info
+                    </button>
                 </div>
             </div>
         </article>

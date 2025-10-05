@@ -2,12 +2,18 @@
     {
         "titre": "Booki",
         "description": "Une web de réservation de vacances, intégrant HTML et CSS à partir de la maquette Figma.",
-        "contexte": "Projet réalisé dans le cadre de la formation pour pratiquer l'intégration web.",
+        "contexte": "Le projet consiste à intégrer les maquettes desktop, tablette et mobile fournies, tout en respectant les spécifications et contraintes techniques précisées. Pour cela, une structure de fichiers ainsi qu’une base de code HTML et CSS sont fournies. Ensuite, le projet doit être complété en conservant cette structure et versionné via GitHub.",
         "objectifs": "Découper et intégrer une maquette Figma en HTML et CSS responsive.",
         "technologies": ["HTML", "CSS"],
-        "competencesDeveloppees": ["Découpage de maquette", "Intégration responsive", "Organisation CSS"],
+        "competences": [
+            "Estructurar una página web con HTML5 semántico",
+            "Crear interfaces responsive con CSS Flexbox y Grid",
+            "Reproducir con precisión una maqueta desde Figma",
+            "Optimizar imágenes y contenidos para la web",
+            "Garantizar la coherencia visual en diferentes dispositivos"
+        ],
         "resultat": "https://github.com/AbelMRuso/Projet1-Booki",
-        "ameliorations": "Ajouter des animations et interactions pour améliorer l'expérience utilisateur.",
+        "ameliorations": "Optimisation des performances, amélioration de l’accessibilité et ajout d’interactions pour enrichir l’expérience utilisateur.",
         "mainImg": "/images/Booki1.png",
         "thumbnails": ["/images/Booki1.png", "/images/Booki2.png", "/images/Booki3.png", "/images/Booki4.png"],
         "date": "Avril 2025",

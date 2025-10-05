@@ -1,17 +1,20 @@
 import styles from "./ProjectCard.module.scss";
 import { FaSearch } from "react-icons/fa";
+import { useState } from "react";
 
 function ProjectCard({ mainImg, thumbnails, description, technologies, date }) {
+    const [selectedImg, setSelectedImg] = useState(mainImg);
+
     return (
         <article className={styles.card}>
             {/* Imagen principal */}
-            <img className={styles.mainImg} src={mainImg} alt="Project main" />
+            <img className={styles.mainImg} src={selectedImg} alt="Project main" />
 
             <div className={styles.cardContent}>
                 {/* Miniaturas */}
                 <div className={styles.thumbnails}>
                     {thumbnails.map((thumb, index) => (
-                        <div key={index} className={styles.thumbnailWrapper}>
+                        <div key={index} className={styles.thumbnailWrapper} onClick={() => setSelectedImg(thumb)}>
                             <img className={styles.testImg} src={thumb} alt={`thumb-${index}`} />
                             <div className={styles.overlay}>
                                 <FaSearch className={styles.search} />

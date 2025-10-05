@@ -9,7 +9,7 @@
         "resultat": "https://github.com/AbelMRuso/Projet1-Booki",
         "ameliorations": "Ajouter des animations et interactions pour améliorer l'expérience utilisateur.",
         "mainImg": "/images/Booki1.png",
-        "thumbnails": ["/images/Booki2.png", "/images/Booki3.png", "/images/Booki4.png"],
+        "thumbnails": ["/images/Booki1.png", "/images/Booki2.png", "/images/Booki3.png", "/images/Booki4.png"],
         "date": "Avril 2025",
         "categories": ["front"]
     },
@@ -23,7 +23,7 @@
         "resultat": "Une web fonctionnelle avec login et formulaire interactif.",
         "ameliorations": "Ajouter notifications et validations plus avancées pour l'utilisateur.",
         "mainImg": "/images/sophieCover.png",
-        "thumbnails": ["/images/sophie1.png", "/images/sophie3.png", "/images/sophie4.png"],
+        "thumbnails": ["/images/sophieCover.png", "/images/sophie1.png", "/images/sophie3.png", "/images/sophie4.png"],
         "date": "Mai 2025",
         "categories": ["front"]
     },
@@ -37,7 +37,7 @@
         "resultat": "Site plus rapide, accessible et mieux référencé.",
         "ameliorations": "Ajouter animations et interactions pour améliorer l'expérience visuelle.",
         "mainImg": "/images/nina-cover.png",
-        "thumbnails": ["/images/nina-1.png", "/images/nina-2.png", "/images/nina-3.png"],
+        "thumbnails": ["/images/nina-cover.png", "/images/nina-1.png", "/images/nina-2.png", "/images/nina-3.png"],
         "date": "Juin 2025",
         "categories": ["front"]
     },
@@ -51,7 +51,7 @@
         "resultat": "Application fonctionnelle avec navigation, filtres et responsive design.",
         "ameliorations": "Ajouter animations et transitions pour améliorer l'expérience utilisateur.",
         "mainImg": "/images/kasa-cover.png",
-        "thumbnails": ["/images/kasa-1.png", "/images/kasa-2.png", "/images/kasa-3.png"],
+        "thumbnails": ["/images/kasa-cover.png", "/images/kasa-1.png", "/images/kasa-2.png", "/images/kasa-3.png"],
         "date": "Juillet 2025",
         "categories": ["front"]
     },
@@ -65,7 +65,7 @@
         "resultat": "Application complète avec gestion de livres et avis utilisateurs.",
         "ameliorations": "Ajouter authentification et notifications pour améliorer l'expérience utilisateur.",
         "mainImg": "/images/grimoire-cover.png",
-        "thumbnails": ["/images/grimoire-1.png", "/images/grimoire-2.png", "/images/grimoire-3.png"],
+        "thumbnails": ["/images/grimoire-cover.png", "/images/grimoire-1.png", "/images/grimoire-2.png", "/images/grimoire-3.png"],
         "date": "Aout 2025",
         "categories": ["back"]
     }

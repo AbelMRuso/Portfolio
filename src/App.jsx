@@ -1,3 +1,4 @@
+import Footer from "./assets/components/footer/Footer";
 import Header from "./assets/components/header/Header";
 import Hero from "./assets/components/hero/Hero";
 import ProjectSection from "./assets/components/projectSection/ProjectSection";
@@ -10,6 +11,7 @@ function App() {
             <Hero></Hero>
             <StackSection />
             <ProjectSection />
+            <Footer />
         </>
     );
 }

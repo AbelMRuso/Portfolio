@@ -1,0 +1,17 @@
+.footerContenair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18em;
+    width: 100%;
+    height: auto;
+    border: solid var(--color-link);
+    padding: 2em;
+}
+
+.liensContenair {
+    display: flex;
+    align-items: end;
+    gap: 4em;
+    font-size: 2.5em;
+}

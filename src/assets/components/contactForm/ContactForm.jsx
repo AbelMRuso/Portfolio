@@ -5,27 +5,23 @@ import styles from "../contactForm/ContactForm.module.scss";
 export default function ContactForm() {
     const form = useRef();
     const [statusMsg, setStatusMsg] = useState("");
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs
-            .sendForm(
-                process.env.REACT_APP_EMAILJS_SERVICE_ID,
-                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-                form.current,
-                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-            )
-            .then(
-                () => {
-                    setStatusMsg("✅ Message envoyé avec succés.");
-                    form.current.reset();
-                },
-                (error) => {
-                    setStatusMsg("❌ Error d'envoi.");
-                    console.error(error);
-                }
-            );
+        console.log(PUBLIC_KEY);
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+            () => {
+                setStatusMsg("✅ Message envoyé avec succés.");
+                form.current.reset();
+            },
+            (error) => {
+                setStatusMsg("❌ Error d'envoi.");
+                console.error(error);
+            }
+        );
     };
 
     return (

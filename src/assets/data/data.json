@@ -1,0 +1,78 @@
+[
+    {
+        "titre": "Booki",
+        "description": "Une web de réservation de vacances, intégrant HTML et CSS à partir de la maquette Figma.",
+        "contexte": "Le projet consiste à intégrer les maquettes desktop, tablette et mobile fournies, tout en respectant les spécifications et contraintes techniques précisées. Pour cela, une structure de fichiers ainsi qu’une base de code HTML et CSS sont fournies. Ensuite, le projet doit être complété en conservant cette structure et versionné via GitHub.",
+        "objectifs": "Découper et intégrer une maquette Figma en HTML et CSS responsive.",
+        "technologies": ["HTML", "CSS"],
+        "competences": [
+            "Estructurar una página web con HTML5 semántico",
+            "Crear interfaces responsive con CSS Flexbox y Grid",
+            "Reproducir con precisión una maqueta desde Figma",
+            "Optimizar imágenes y contenidos para la web",
+            "Garantizar la coherencia visual en diferentes dispositivos"
+        ],
+        "resultat": "https://github.com/AbelMRuso/Projet1-Booki",
+        "ameliorations": "Optimisation des performances, amélioration de l’accessibilité et ajout d’interactions pour enrichir l’expérience utilisateur.",
+        "mainImg": "/images/Booki1.png",
+        "thumbnails": ["/images/Booki1.png", "/images/Booki2.png", "/images/Booki3.png", "/images/Booki4.png"],
+        "date": "Avril 2025",
+        "categories": ["front"]
+    },
+    {
+        "titre": "Shopie Bluel",
+        "description": "Web d'architecture avec login pour la propriétaire et gestion de formulaires en JavaScript pur.",
+        "contexte": "Projet pratique pour manipuler le DOM et gérer des formulaires dynamiques.",
+        "objectifs": "Créer des formulaires dynamiques et permettre l'ajout/suppression d'images.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "competences": ["Manipulation du DOM", "Gestion de formulaires", "Validation JS"],
+        "resultat": "Une web fonctionnelle avec login et formulaire interactif.",
+        "ameliorations": "Ajouter notifications et validations plus avancées pour l'utilisateur.",
+        "mainImg": "/images/sophieCover.png",
+        "thumbnails": ["/images/sophieCover.png", "/images/sophie1.png", "/images/sophie3.png", "/images/sophie4.png"],
+        "date": "Mai 2025",
+        "categories": ["front"]
+    },
+    {
+        "titre": "Nina Carducci",
+        "description": "Debug et optimisation d'une web de photographe avec Lighthouse, Rich Snippets et Wave.",
+        "contexte": "Projet pour améliorer la performance, l'accessibilité et le SEO d'un site existant.",
+        "objectifs": "Optimiser la vitesse, corriger les erreurs et ajouter des rich snippets.",
+        "technologies": ["HTML", "CSS", "JavaScript", "SEO", "Accessibilité"],
+        "competences": ["Debug", "Optimisation performance", "SEO et accessibilité"],
+        "resultat": "Site plus rapide, accessible et mieux référencé.",
+        "ameliorations": "Ajouter animations et interactions pour améliorer l'expérience visuelle.",
+        "mainImg": "/images/nina-cover.png",
+        "thumbnails": ["/images/nina-cover.png", "/images/nina-1.png", "/images/nina-2.png", "/images/nina-3.png"],
+        "date": "Juin 2025",
+        "categories": ["front"]
+    },
+    {
+        "titre": "Kasa_Fr",
+        "description": "Plateforme de réservation de vacances inspirée d’Airbnb. Interface interactive avec menus, évaluations, fiches et carrousel d’images.",
+        "contexte": "Projet pratique pour apprendre React et la gestion d'état.",
+        "objectifs": "Créer un site dynamique avec composants React réutilisables.",
+        "technologies": ["React", "SCSS", "JavaScript"],
+        "competences": ["Componentisation React", "Hooks", "Routing"],
+        "resultat": "Application fonctionnelle avec navigation, filtres et responsive design.",
+        "ameliorations": "Ajouter animations et transitions pour améliorer l'expérience utilisateur.",
+        "mainImg": "/images/kasa-cover.png",
+        "thumbnails": ["/images/kasa-cover.png", "/images/kasa-1.png", "/images/kasa-2.png", "/images/kasa-3.png"],
+        "date": "Juillet 2025",
+        "categories": ["front"]
+    },
+    {
+        "titre": "Mon vieux grimoire",
+        "description": "Page web de valorisation de livres avec backend Node, Express et MongoDB.",
+        "contexte": "Projet complet fullstack pour gérer la collection et les avis des utilisateurs.",
+        "objectifs": "Créer un backend complet et connecter avec le frontend pour CRUD livres.",
+        "technologies": ["Node.js", "Express", "MongoDB", "JavaScript"],
+        "competences": ["Backend CRUD", "Connexion frontend-backend", "Gestion base de données"],
+        "resultat": "Application complète avec gestion de livres et avis utilisateurs.",
+        "ameliorations": "Ajouter authentification et notifications pour améliorer l'expérience utilisateur.",
+        "mainImg": "/images/grimoire-cover.png",
+        "thumbnails": ["/images/grimoire-cover.png", "/images/grimoire-1.png", "/images/grimoire-2.png", "/images/grimoire-3.png"],
+        "date": "Aout 2025",
+        "categories": ["back"]
+    }
+]

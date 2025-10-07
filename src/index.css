@@ -17,35 +17,58 @@
     --color-text-secondary: #a1a1aa;
     --color-accent: #8b5cf6;
     --color-accent-light: #c084fc;
+    --color-link: #ebcd45;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
     font-weight: 500;
-    color: var(--color-accent);
+    color: var(--color-link);
     text-decoration: inherit;
+    cursor: pointer;
 }
 a:hover {
     color: var(--color-accent-light);
 }
 
 body {
-    margin: 0;
-    display: flex;
-    place-items: center;
     min-width: 320px;
     min-height: 100vh;
+    line-height: 1.5;
     background-color: var(--color-bg);
-    color: var(--color-text);
+    color: var(--color-text-secondary);
     font-family: "Inter", system-ui, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
     font-family: "Poppins", sans-serif;
+    font-size: 4em;
+    color: var(--color-text);
+    margin: 0;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.2em;
+    color: var(--color-text);
+    margin: 0;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6em;
+    color: var(--color-text);
+    margin: 0;
+}
+
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
     color: var(--color-text);
     margin: 0;
 }

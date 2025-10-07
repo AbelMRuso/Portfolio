@@ -5,7 +5,7 @@ function AboutBlock({ image, title, text, reverse }) {
         <>
             <section className={`${styles.contenair} ${reverse ? styles.reverse : ""}`}>
                 <img src={image} alt="" />
-                <div>
+                <div className={styles.text}>
                     <h2>{title}</h2>
                     <p>{text} </p>
                 </div>

@@ -8,3 +8,9 @@
     display: flex;
     flex-direction: column;
 }
+
+.statusMsg {
+    min-height: 2em;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}

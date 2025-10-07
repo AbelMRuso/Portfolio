@@ -1,7 +1,9 @@
 import AboutBlock from "../about-block/AboutBlock";
 import styles from "../about-section/AboutSection.module.scss";
-import img1 from "../../../../public/images/nina-1.png";
-import img2 from "../../../../public/images/nina-2.png";
+import imgContext from "../../../../public/images/img-contexte.jpeg";
+import imgParcours from "../../../../public/images/img-parcours2.jpg";
+import imgStack from "../../../../public/images/img-stack2.jpg";
+import imgAmbitions from "../../../../public/images/img-ambitions.jpg";
 
 function AboutSection() {
     return (
@@ -9,25 +11,33 @@ function AboutSection() {
             <main className={styles.contenair}>
                 <h1>Mon histoire</h1>
                 <AboutBlock
-                    image={img1}
+                    image={imgContext}
                     title={"Contexte"}
-                    text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non beatae voluptatem illum ipsum"}
+                    text={
+                        "Toujours en quête de nouveaux défis, je me suis installé sur la côte Atlantique pour apprendre une nouvelle langue et vivre de nouvelles expériences, tout en poursuivant ma passion pour le surf. Mon intérêt pour la programmation est né lorsque, travaillant comme coordinateur logistique, un bug m’a amené à collaborer avec des développeurs : ce moment a déclenché une véritable étincelle et a éveillé ma curiosité pour le code."
+                    }
                 />
                 <AboutBlock
-                    image={img2}
+                    image={imgParcours}
                     title={"Parcours profesionnels"}
-                    text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non beatae voluptatem illum ipsum"}
+                    text={
+                        "Mon parcours a toujours été guidé par le sport et l’enseignement. J’ai passé sept ans à encadrer des disciplines nautiques, coordonner des équipes et gérer un centre, tout en restant en contact avec la nature et les personnes. Ma formation en éducation primaire m’a apporté des compétences pédagogiques, psychologiques et méthodologiques solides. Aujourd’hui, je mets ces acquis et cette expérience au service de ma reconversion vers le développement web, un domaine où je peux allier rigueur, curiosité et goût pour les défis."
+                    }
                     reverse
                 />
                 <AboutBlock
-                    image={img1}
+                    image={imgStack}
                     title={"Methodologie et stack"}
-                    text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non beatae voluptatem illum ipsum"}
+                    text={
+                        "Ayant principalement travaillé en solo, j’ai appris à apprécier l’organisation et le suivi rigoureux des projets, notamment grâce aux méthodes agiles et à l’utilisation d’un tableau Kanban. Bien que formé en full stack, c’est React qui me passionne le plus aujourd’hui, et je suis enthousiaste à l’idée de relever de nouveaux défis, d’apprendre constamment et de contribuer à des projets concrets et innovants."
+                    }
                 />
                 <AboutBlock
-                    image={img2}
+                    image={imgAmbitions}
                     title={"Projets et ambitions"}
-                    text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non beatae voluptatem illum ipsum"}
+                    text={
+                        "Mon rêve en tant que développeur est de créer une application pour les établissements scolaires qui motive les élèves via la gamification et une interface en pixel art, tout en facilitant l’organisation et le contact avec les parents. Pour y parvenir, je commence par travailler avec d’autres développeurs, réaliser des projets web pour de petites entreprises et aider les indépendants, afin d’acquérir expérience et contacts pour concrétiser mon objectif."
+                    }
                     reverse
                 />
             </main>

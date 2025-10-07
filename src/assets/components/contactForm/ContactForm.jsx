@@ -11,15 +11,20 @@ export default function ContactForm() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log(PUBLIC_KEY);
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
             () => {
-                setStatusMsg("✅ Message envoyé avec succés.");
+                setStatusMsg("✅ Message envoyé avec succès.");
                 form.current.reset();
+                setTimeout(() => {
+                    setStatusMsg("");
+                }, 3000);
             },
             (error) => {
-                setStatusMsg("❌ Error d'envoi.");
+                setStatusMsg("❌ Error d'envoi. Réessayez plus tard");
                 console.error(error);
+                setTimeout(() => {
+                    setStatusMsg("");
+                }, 3000);
             }
         );
     };
@@ -40,7 +45,7 @@ export default function ContactForm() {
                     <button type="submit">Envoyer</button>
                 </div>
             </form>
-            {statusMsg && <p className="status">{statusMsg}</p>}
+            {statusMsg && <p className={styles.statusMsg}>{statusMsg || "  "}</p>} {/* REVISAR AQUI!!!!!! */}
         </div>
     );
 }

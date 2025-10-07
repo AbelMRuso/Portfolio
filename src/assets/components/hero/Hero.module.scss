@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8em;
+    gap: 14em;
+    margin: 4em;
     padding: 2em;
 }
 
@@ -22,4 +23,5 @@ h1 {
 
 .subtitle {
     color: var(--color-link);
+    font-size: 2.2em;
 }

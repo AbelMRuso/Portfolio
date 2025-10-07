@@ -14,6 +14,7 @@ import {
     FaSitemap,
     FaCode,
     FaFigma,
+    FaJsSquare,
 } from "react-icons/fa";
 import stackStyles from "../stackSection/StackSection.module.scss";
 
@@ -47,6 +48,11 @@ function StackSection() {
                         <div className={styles.tech}>
                             <FaCss3 className={styles.icons} />
                             <span>CSS</span>
+                        </div>
+
+                        <div className={styles.tech}>
+                            <FaJsSquare className={styles.icons} />
+                            <span>JS</span>
                         </div>
 
                         <div className={styles.tech}>

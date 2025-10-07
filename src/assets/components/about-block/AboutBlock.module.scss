@@ -1,0 +1,16 @@
+.contenair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+
+.contenair img {
+    width: 40%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.contenair.reverse {
+    flex-direction: row-reverse;
+}

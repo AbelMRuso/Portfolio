@@ -10,10 +10,10 @@ function Footer() {
                     <ContactForm />
                 </div>
                 <div className={styles.liensContenair}>
-                    <a href="">
+                    <a target="_blank" href="https://github.com/AbelMRuso">
                         <FaGithub />{" "}
                     </a>
-                    <a href="">
+                    <a target="_blank" href="https://www.linkedin.com/in/abel-martínez-ruso">
                         <FaLinkedin />{" "}
                     </a>
                 </div>

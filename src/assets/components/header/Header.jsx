@@ -1,5 +1,6 @@
 import { FaIdCard } from "react-icons/fa";
 import styles from "../header/Header.module.scss";
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
@@ -10,8 +11,8 @@ function Header() {
                     "LOGO"
                 </p>
                 <nav className={styles.navContenair}>
-                    <a href="">Accueil</a>
-                    <a href="">À propos</a>
+                    <Link to="/">Accueil</Link>
+                    <Link to="/about">À propos</Link>
                 </nav>
             </header>
         </>

@@ -7,8 +7,9 @@
 .contenair {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16em;
-    width: 100%;
+    justify-content: space-around;
+    gap: 8em;
+    width: auto;
     margin-top: 2em;
 }
 

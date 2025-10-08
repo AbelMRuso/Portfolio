@@ -83,3 +83,11 @@
         font-size: 0.7em;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .modal {
+        width: 90%;
+        height: 90%;
+        font-size: 0.9em;
+    }
+}

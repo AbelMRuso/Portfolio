@@ -2,19 +2,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18em;
+    gap: 16em;
     width: 100%;
     height: auto;
     border: solid var(--color-link);
     padding: 2em;
-    margin-top: 4em;
+    background-color: black;
 }
 
 .liensContenair {
     display: flex;
-    align-items: end;
-    gap: 4em;
+    align-items: center;
+    justify-content: space-around;
     font-size: 2.5em;
+    width: 20%;
 }
 
 @media (max-width: 767px) {
@@ -22,5 +23,17 @@
         flex-direction: column;
         align-items: center;
         gap: 3em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footerContenair {
+        gap: 2em;
+    }
+
+    .liensContenair {
+        flex-direction: column;
+        gap: 1em;
+        width: 20%;
     }
 }

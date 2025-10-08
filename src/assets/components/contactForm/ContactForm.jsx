@@ -31,7 +31,7 @@ export default function ContactForm() {
 
     return (
         <div className={styles.contenair}>
-            <h3>¿Prêt pour travailler ensemble?</h3>
+            <h3>¿Une idée, un projet? Contactez-moi</h3>
             <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <label htmlFor="name">Nom</label>
                 <input type="text" id="name" name="user_name" required />

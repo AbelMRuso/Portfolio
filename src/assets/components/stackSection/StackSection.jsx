@@ -21,15 +21,15 @@ import stackStyles from "../stackSection/StackSection.module.scss";
 function StackSection() {
     return (
         <section className={stackStyles.sectionContenair}>
-            <h2 className={stackStyles.centerContent}>Formation et stack technologique</h2>
+            <h2>Formation et stack technologique</h2>
             <div className={stackStyles.contenair}>
-                <div className={stackStyles.centerContent}>
+                <div className={stackStyles.columnContenair}>
                     <h3>Formation</h3>
                     <CardFormation layout="side" title={"Développeur Web"} subtitle={"OpenClasroom"} date={"avril - octobre 2025"}>
                         <img className={styles.logo} src={openclassroomLogo} alt="Logo du centre de formation Open Classroom" />
                     </CardFormation>
                 </div>
-                <div className={stackStyles.centerContent}>
+                <div className={stackStyles.columnContenair}>
                     <h3>Stack technologique</h3>
                     <CardFormation
                         layout="stack"

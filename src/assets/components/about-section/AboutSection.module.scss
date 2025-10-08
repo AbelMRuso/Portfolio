@@ -3,6 +3,22 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 8em;
     padding: 4em;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.contenair h1 {
+    margin-bottom: 1em;
+}
+
+@media (max-width: 767px) {
+    .contenair {
+        padding: 1em;
+        gap: 2em;
+    }
+
+    .contenair h1 {
+        margin-bottom: 0;
+    }
 }

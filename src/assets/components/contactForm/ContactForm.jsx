@@ -41,7 +41,7 @@ export default function ContactForm() {
 
                 <label htmlFor="message">Message</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-                <div>
+                <div className={styles.button}>
                     <button type="submit">Envoyer</button>
                 </div>
             </form>

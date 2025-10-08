@@ -93,6 +93,27 @@ button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
+html {
+    font-size: 16px;
+}
+
+/* Media querrys */
+
+@media (max-width: 767px) {
+    body {
+        max-width: 100%; /* ocupa todo el ancho */
+        margin: 0; /* elimina márgenes */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* centra verticalmente */
+        align-items: center; /* centra horizontalmente */
+        min-height: 100vh; /* asegura altura completa */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets */
+}
 
 @media (prefers-color-scheme: light) {
     :root {

@@ -101,7 +101,7 @@ html {
 
 /* Media querrys */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     body {
         max-width: 100%; /* ocupa todo el ancho */
         margin: 0; /* elimina márgenes */

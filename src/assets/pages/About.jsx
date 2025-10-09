@@ -8,7 +8,7 @@ function About() {
                 <title>À propos | Abel MR Dev</title>
                 <meta
                     name="description"
-                    content="Découvrez le parcours et les valeurs d'Abel Martínez Ruso, développeur web passionné par le code propre et les projets créatifs."
+                    content="Découvrez le parcours d'Abel Martínez Ruso, développeur Full Stack passionné par React, alliant rigueur, curiosité et projets web innovants, de la pédagogie au code."
                 />
             </Helmet>
             <AboutSection />;

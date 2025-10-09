@@ -11,7 +11,7 @@ function Home() {
                 <title>Accueil | Abel MR Dev</title>
                 <meta
                     name="description"
-                    content="Bienvenue sur le portfolio d'Abel Martínez Ruso, développeur web passionné par la création de sites modernes, accessibles et performants."
+                    content="Portfolio d'Abel Martínez Ruso, développeur Full Stack spécialisé en React, créant des applications web modernes, performantes et accessibles."
                 />
             </Helmet>
             <main className={styles.contenair}>

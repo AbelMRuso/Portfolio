@@ -25,6 +25,7 @@ function ProjectSection() {
                     <ProjectCard
                         key={index}
                         mainImg={project.mainImg}
+                        alt={`Page d'accuel du site ${project.titre}`}
                         thumbnails={project.thumbnails}
                         description={project.description}
                         technologies={project.technologies}

@@ -1,18 +1,22 @@
-import { FaIdCard } from "react-icons/fa";
+import { FaCode, FaIdCard } from "react-icons/fa";
 import styles from "../header/Header.module.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
     return (
         <>
             <header className={styles.headerContenair}>
-                <p className={styles.logo}>
-                    <FaIdCard />
-                    "LOGO"
-                </p>
+                <Link to="/" className={styles.logo}>
+                    <FaCode className={styles.icon} />
+                    MR.Dev
+                </Link>
                 <nav className={styles.navContenair}>
-                    <Link to="/">Accueil</Link>
-                    <Link to="/about">À propos</Link>
+                    <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : "")}>
+                        Accueil
+                    </NavLink>
+                    <NavLink to="/about" className={({ isActive }) => (isActive ? styles.active : "")}>
+                        À propos
+                    </NavLink>
                 </nav>
             </header>
         </>

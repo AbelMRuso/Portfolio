@@ -1,9 +1,9 @@
 import AboutBlock from "../about-block/AboutBlock";
 import styles from "../about-section/AboutSection.module.scss";
-import imgContext from "../../../../public/images/img-contexte.jpeg";
-import imgParcours from "../../../../public/images/img-parcours.jpg";
-import imgStack from "../../../../public/images/img-stack2.jpg";
-import imgAmbitions from "../../../../public/images/img-ambitions.jpg";
+import imgContext from "../../../assets/images/img-contexte.jpeg";
+import imgParcours from "../../../assets/images/img-parcours.jpg";
+import imgStack from "../../../assets/images/img-stack2.jpg";
+import imgAmbitions from "../../../assets/images/img-ambitions.jpg";
 
 function AboutSection() {
     return (
@@ -12,6 +12,7 @@ function AboutSection() {
                 <h1>Mon histoire</h1>
                 <AboutBlock
                     image={imgContext}
+                    alt={"Abel se promenant sur la plage de Seignosse, dans les Landes, avec sa chienne"}
                     title={"Contexte"}
                     text={
                         <>
@@ -24,6 +25,7 @@ function AboutSection() {
                 />
                 <AboutBlock
                     image={imgParcours}
+                    alt={"Abel réalisant une manœuvre en paddle surf durant sa période de moniteur de sports nautiques"}
                     title={"Parcours profesionnels"}
                     text={
                         <>
@@ -38,6 +40,7 @@ function AboutSection() {
                 />
                 <AboutBlock
                     image={imgStack}
+                    alt={"Écran affichant un éditeur de code."}
                     title={"Methodologie et stack"}
                     text={
                         <>
@@ -50,6 +53,7 @@ function AboutSection() {
                 />
                 <AboutBlock
                     image={imgAmbitions}
+                    alt={"Image affichant, en format JS : si le cerveau n’est pas vide, continue à coder, sinon, demande un café."}
                     title={"Projets et ambitions"}
                     text={
                         <>

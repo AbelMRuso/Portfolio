@@ -1,12 +1,14 @@
 .contenair {
     display: flex;
+    padding-left: 4em;
     gap: 2em;
-    margin-left: 8em;
-    margin-top: 2em;
-    margin-bottom: 2em;
 }
 
 .buttonsContenair {
     display: flex;
     gap: 1em;
+}
+
+.contenair h3 {
+    font-size: 1.6em;
 }

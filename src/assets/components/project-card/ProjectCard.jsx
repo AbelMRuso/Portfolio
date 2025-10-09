@@ -2,13 +2,13 @@ import styles from "./ProjectCard.module.scss";
 import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 
-function ProjectCard({ mainImg, thumbnails, description, technologies, date, onOpenModal }) {
+function ProjectCard({ mainImg, thumbnails, description, technologies, date, onOpenModal, alt }) {
     const [selectedImg, setSelectedImg] = useState(mainImg);
 
     return (
         <article className={styles.card}>
             {/* Imagen principal */}
-            <img className={styles.mainImg} src={selectedImg} alt="Project main" />
+            <img className={styles.mainImg} src={selectedImg} alt={alt} />
 
             <div className={styles.cardContent}>
                 {/* Miniaturas */}

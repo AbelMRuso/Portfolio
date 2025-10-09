@@ -11,22 +11,27 @@ export default function ContactForm() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log(PUBLIC_KEY);
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
             () => {
-                setStatusMsg("✅ Message envoyé avec succés.");
+                setStatusMsg("✅ Message envoyé avec succès.");
                 form.current.reset();
+                setTimeout(() => {
+                    setStatusMsg("");
+                }, 3000);
             },
             (error) => {
-                setStatusMsg("❌ Error d'envoi.");
+                setStatusMsg("❌ Error d'envoi. Réessayez plus tard");
                 console.error(error);
+                setTimeout(() => {
+                    setStatusMsg("");
+                }, 3000);
             }
         );
     };
 
     return (
         <div className={styles.contenair}>
-            <h3>¿Prêt pour travailler ensemble?</h3>
+            <h3>¿Une idée, un projet? Contactez-moi</h3>
             <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <label htmlFor="name">Nom</label>
                 <input type="text" id="name" name="user_name" required />
@@ -36,11 +41,11 @@ export default function ContactForm() {
 
                 <label htmlFor="message">Message</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-                <div>
+                <div className={styles.button}>
                     <button type="submit">Envoyer</button>
                 </div>
             </form>
-            {statusMsg && <p className="status">{statusMsg}</p>}
+            {statusMsg && <p className={styles.statusMsg}>{statusMsg || "  "}</p>} {/* REVISAR AQUI!!!!!! */}
         </div>
     );
 }

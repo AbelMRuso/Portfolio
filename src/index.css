@@ -37,12 +37,15 @@ a:hover {
 }
 
 body {
-    min-width: 320px;
+    width: 100%;
     min-height: 100vh;
     line-height: 1.5;
     background-color: var(--color-bg);
     color: var(--color-text-secondary);
+    background-color: whitesmoke;
     font-family: "Inter", system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -54,14 +57,14 @@ h1 {
 
 h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 2.2em;
+    font-size: 3em;
     color: var(--color-text);
     margin: 0;
 }
 
 h3 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.6em;
+    font-size: 2.2em;
     color: var(--color-text);
     margin: 0;
 }
@@ -91,6 +94,27 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+}
+html {
+    font-size: 16px;
+}
+
+/* Media querrys */
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100%; /* ocupa todo el ancho */
+        margin: 0; /* elimina márgenes */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* centra verticalmente */
+        align-items: center; /* centra horizontalmente */
+        min-height: 100vh; /* asegura altura completa */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets */
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,9 +1,9 @@
 import AboutBlock from "../about-block/AboutBlock";
 import styles from "../about-section/AboutSection.module.scss";
-import imgContext from "../../../assets/images/img-contexte.jpeg";
-import imgParcours from "../../../assets/images/img-parcours.jpg";
-import imgStack from "../../../assets/images/img-stack2.jpg";
-import imgAmbitions from "../../../assets/images/img-ambitions.jpg";
+import imgContext from "../../../assets/images/img-contexte.webp";
+import imgParcours from "../../../assets/images/img-parcours.webp";
+import imgStack from "../../../assets/images/img-stack2.webp";
+import imgAmbitions from "../../../assets/images/img-ambitions.webp";
 
 function AboutSection() {
     return (

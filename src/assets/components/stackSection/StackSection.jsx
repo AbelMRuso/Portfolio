@@ -1,5 +1,5 @@
 import CardFormation from "../formation-card/CardFormation";
-import openclassroomLogo from "../../images/openclassrooms_logo.png";
+import openclassroomLogo from "../../images/openclassrooms_logo.webp";
 import styles from "../formation-card/CardFormation.module.scss";
 import {
     FaCss3,

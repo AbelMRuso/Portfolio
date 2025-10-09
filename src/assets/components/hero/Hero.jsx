@@ -1,4 +1,4 @@
-import profil from "../../images/profil_image.webp";
+import profil from "../../images/profil-image.webp";
 import styles from "../hero/Hero.module.scss";
 
 function Hero() {

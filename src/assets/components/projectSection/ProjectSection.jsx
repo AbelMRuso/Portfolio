@@ -1,7 +1,7 @@
 import ProjectCard from "../project-card/ProjectCard";
 import styles from "../projectSection/ProjectSection.module.scss";
 import projects from "../../data/data.json";
-import Filters from "../filters/filters";
+import Filters from "../filters/Filters";
 import Modal from "../modal/Modal";
 import { useState } from "react";
 

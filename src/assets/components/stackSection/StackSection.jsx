@@ -21,7 +21,7 @@ import stackStyles from "../stackSection/StackSection.module.scss";
 function StackSection() {
     return (
         <section className={stackStyles.sectionContenair}>
-            <h2>Formation et stack technologique</h2>
+            <h2>Formation & Stack</h2>
             <div className={stackStyles.contenair}>
                 <div className={stackStyles.columnContenair}>
                     <h3>Formation</h3>

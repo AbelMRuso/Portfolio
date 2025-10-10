@@ -15,11 +15,11 @@
 .modal {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2em;
     background-color: var(--color-bg-secondary);
     border-radius: 1rem;
     width: 60em;
-    height: 40em;
+    height: max-content;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -76,11 +76,15 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .modal {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
         width: 90%;
         height: 90%;
         font-size: 0.7em;
+        overflow-y: auto;
     }
 }
 

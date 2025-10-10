@@ -24,6 +24,11 @@
         align-items: center;
         gap: 3em;
     }
+
+    .liensContenair {
+        gap: 1em;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

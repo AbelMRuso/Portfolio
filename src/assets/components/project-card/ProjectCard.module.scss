@@ -42,10 +42,10 @@
 
 .thumbnailWrapper {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 4em;
+    height: 4em;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0.5em;
 
     img {
         width: 100%;
@@ -117,4 +117,10 @@
 
 .infoButton:hover {
     background-color: var(--color-accent-light);
+}
+
+@media (max-width: 768px) {
+    .thumbnails {
+        gap: 0.5em;
+    }
 }

@@ -2,8 +2,8 @@
     border: solid 0.1em;
     border-radius: 0.75em;
     border-color: var(--color-accent-light);
-    height: 10em;
-    width: 28em;
+    height: max-content;
+    width: 80%;
     background-color: var(--color-bg-secondary);
     padding: 1.2em 1em;
     display: flex;
@@ -54,6 +54,7 @@
     display: flex;
     justify-content: center;
     gap: 4em;
+    padding: 1em;
 }
 
 .tech {
@@ -62,4 +63,15 @@
     align-items: center;
     font-size: 0.8em;
     gap: 0.25em;
+}
+
+@media (max-width: 768px) {
+    .iconsContenair {
+        flex-wrap: wrap;
+    }
+
+    .side {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

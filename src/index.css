@@ -3,6 +3,11 @@
     line-height: 1.5;
     font-weight: 400;
 
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
 
@@ -36,8 +41,12 @@ a:hover {
     color: var(--color-accent-light);
 }
 
+html,
 body {
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* solo temporal mientras depuras */
+    box-sizing: border-box;
     min-height: 100vh;
     line-height: 1.5;
     background-color: var(--color-bg);

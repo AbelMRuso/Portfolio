@@ -11,7 +11,10 @@ function Modal({ isOpen, onClose, project }) {
                     <FaTimes />
                 </button>
 
-                <h2>Titre du projet: {project.titre}</h2>
+                <h2>
+                    <strong>Titre: </strong>
+                    {project.titre}
+                </h2>
                 <p>
                     <strong>Contexte :</strong> {project.contexte}
                 </p>

@@ -1,5 +1,6 @@
 import AboutSection from "../components/about-section/AboutSection";
 import { Helmet } from "react-helmet";
+import styles from "../pages/About.module.scss";
 
 function About() {
     return (
@@ -11,7 +12,9 @@ function About() {
                     content="Découvrez le parcours d'Abel Martínez Ruso, développeur Full Stack passionné par React, alliant rigueur, curiosité et projets web innovants, de la pédagogie au code."
                 />
             </Helmet>
-            <AboutSection />;
+            <div className={styles.contenair}>
+                <AboutSection />
+            </div>
         </>
     );
 }

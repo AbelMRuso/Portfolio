@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     height: 6em;
+    width: 100%;
     border: solid var(--color-accent);
     padding: 2em;
     background-color: black;
@@ -23,9 +24,9 @@
 }
 
 .active {
-    color: #8b5cf6; // color púrpura llamativo
-    font-weight: bold; // texto más grueso
-    border-bottom: 0.18em solid #ebcd45; // línea inferior amarilla
+    color: #8b5cf6;
+    font-weight: bold;
+    border-bottom: 0.18em solid #ebcd45;
     padding-bottom: 0.2em;
     transition: all 0.1s ease;
 }
@@ -36,7 +37,8 @@
 
 @media (max-width: 767px) {
     .headerContenair {
-        margin: 0;
+        width: 100%;
+        padding: 2em;
         background-color: black;
         border: solid var(--color-accent);
     }

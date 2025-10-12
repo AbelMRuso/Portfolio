@@ -6,24 +6,24 @@ import Modal from "../modal/Modal";
 import { useState } from "react";
 
 function ProjectSection() {
-    //filtrado//
     const [filter, setFilter] = useState("all");
 
     const filteredProjects = projects.filter((project) => (filter === "all" ? true : project.categories.includes(filter)));
 
-    //modal//
     const [selectedProject, setSelectedProject] = useState(null);
 
     return (
         <section className={styles.sectionContenair}>
             <h2 className={styles.title}>Projets</h2>
+
             <div>
                 <Filters setFilter={setFilter} />
             </div>
+
             <div className={styles.projectsContenair}>
                 {filteredProjects.map((project, index) => (
                     <ProjectCard
-                        key={index}
+                        key={project.id}
                         mainImg={project.mainImg}
                         alt={`Page d'accuel du site ${project.titre}`}
                         thumbnails={project.thumbnails}
@@ -34,6 +34,7 @@ function ProjectSection() {
                     />
                 ))}
             </div>
+
             <Modal isOpen={!!selectedProject} onClose={() => setSelectedProject(null)} project={selectedProject || {}} />
         </section>
     );

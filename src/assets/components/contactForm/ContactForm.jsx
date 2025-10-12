@@ -45,7 +45,7 @@ export default function ContactForm() {
                     <button type="submit">Envoyer</button>
                 </div>
             </form>
-            {statusMsg && <p className={styles.statusMsg}>{statusMsg || "  "}</p>} {/* REVISAR AQUI!!!!!! */}
+            {statusMsg && <p className={styles.statusMsg}>{statusMsg}</p>}
         </div>
     );
 }

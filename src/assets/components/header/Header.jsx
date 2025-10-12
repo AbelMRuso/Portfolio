@@ -1,4 +1,4 @@
-import { FaCode, FaIdCard } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 import styles from "../header/Header.module.scss";
 import { Link, NavLink } from "react-router-dom";
 

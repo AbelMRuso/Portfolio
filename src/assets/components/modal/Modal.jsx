@@ -23,12 +23,13 @@ function Modal({ isOpen, onClose, project }) {
                 </p>
                 <p>
                     <strong>Compétences développées:</strong>
-                    <ul className={styles.ul}>
-                        {project.competences.map((competence, index) => (
-                            <li key={index}>{competence}</li>
-                        ))}
-                    </ul>
                 </p>
+                <ul className={styles.ul}>
+                    {project.competences.map((competence, index) => (
+                        <li key={index}>{competence}</li>
+                    ))}
+                </ul>
+
                 <p>
                     <strong>Code du projet: </strong>
                     <a target="_blank" className={styles.lien} href={project.resultat}>

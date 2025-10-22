@@ -16,13 +16,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --color-bg: #1e1e24;
-    --color-bg-secondary: #2c2c34;
-    --color-text: #eaeaea;
-    --color-text-secondary: #a1a1aa;
-    --color-accent: #8b5cf6;
-    --color-accent-light: #c084fc;
-    --color-link: #ebcd45;
+    --color-bg: #23322d; /* Fondo general */
+    --color-bg-secondary: #2e4b47; /* Fondo de tarjetas o bloques secundarios */
+    --color-text: #faf8f4; /* Texto principal */
+    --color-text-secondary: #886b55; /* Subtítulos, iconos o bordes suaves */
+    --color-accent: #fdd8a7; /* Titulares principales y botones */
+    --color-accent-light: #9dbfaf; /* Acento secundario / hover */
+    --color-link: #96806c; /* Líneas divisorias o bordes sutiles */
 }
 
 * {
@@ -52,34 +52,34 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text-secondary);
     background-color: whitesmoke;
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: "Lora", serif;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Lemon", sans-serif;
     font-size: 4em;
     color: var(--color-text);
     margin: 0;
 }
 
 h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Lora", serif;
     font-size: 3em;
     color: var(--color-text);
     margin: 0;
 }
 
 h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Lora", serif;
     font-size: 2.2em;
     color: var(--color-text);
     margin: 0;
 }
 
 h4 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Lora", serif;
     font-size: 1.2em;
     color: var(--color-text);
     margin: 0;

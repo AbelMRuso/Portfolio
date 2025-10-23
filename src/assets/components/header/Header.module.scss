@@ -15,8 +15,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--color-accent); // por ejemplo tu beige claro
-    background-color: rgba(0, 0, 0, 0.4); // semitransparente para resaltar el texto
+    color: var(--color-accent);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100vh;
     padding: 2rem;
@@ -100,10 +100,11 @@
 .overlay h2 {
     opacity: 0;
     animation: fadeSlideUp 1.2s ease forwards;
+    animation-delay: 0.5s;
 }
 
 .overlay h2 {
-    animation-delay: 0.3s; // aparece un poco después del h1
+    animation-delay: 0.9s;
 }
 
 .typeWriter {
@@ -112,8 +113,14 @@
     word-wrap: break-word;
     border-right: 2px solid #fff; /* cursor */
     font-size: 2rem;
+    animation: blink 1s step-start infinite; /* animación del cursor */
 }
 
-.rotatingWord {
-    color: var(--color-accent);
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    } /* desaparece a la mitad del ciclo */
+    100% {
+        border-color: #fff;
+    } /* reaparece */
 }

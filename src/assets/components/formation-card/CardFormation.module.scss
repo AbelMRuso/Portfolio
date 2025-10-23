@@ -2,8 +2,8 @@
     border: solid 0.1em;
     border-radius: 0.75em;
     border-color: var(--color-accent-light);
-    height: max-content;
-    width: 80%;
+    height: auto;
+    width: 100%;
     background-color: var(--color-bg-secondary);
     padding: 1.2em 1em;
     display: flex;
@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    color: var(--color-accent-light);
 }
 
 .side {
@@ -29,7 +30,7 @@
 .logo {
     border-radius: 50%;
     border: solid;
-    border-color: var(--color-accent);
+    border-color: var(--color-accent-light);
     height: 6em;
     width: 6em;
     object-fit: cover;
@@ -55,6 +56,7 @@
     justify-content: center;
     gap: 4em;
     padding: 1em;
+    color: var(--color-accent-light);
 }
 
 .tech {
@@ -73,5 +75,12 @@
     .side {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        width: 75%;
     }
 }

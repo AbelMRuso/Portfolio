@@ -5,11 +5,14 @@ function AboutSection() {
     return (
         <>
             <section className={styles.contenair}>
-                <h2>Bonjour, je suis Abel.</h2>
+                <div>
+                    <h2>Bonjour, je suis Abel.</h2>
+                    <h3>Développeur junior passionné par le front-end et le design d’interfaces.</h3>
+                    <span className={styles.separateur}></span>
+                </div>
+
                 <div className={styles.flex}>
                     <div className={styles.textDistribution}>
-                        <h3>Développeur junior passionné par le front-end et le design d’interfaces.</h3>
-                        <span className={styles.separateur}></span>
                         <p>
                             J’ai découvert le monde du développement presque par hasard, ce qui a immédiatement éveillé ma curiosité. J’ai commencé à
                             me former de manière autonome en juillet 2024, puis j’ai suivi un cursus complet de développement Full Stack que j’ai

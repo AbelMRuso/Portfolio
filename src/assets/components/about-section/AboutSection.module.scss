@@ -42,3 +42,13 @@
 .textDistribution {
     width: 55%;
 }
+
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+    .textDistribution {
+        width: 100%;
+    }
+}

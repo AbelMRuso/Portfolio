@@ -1,71 +1,35 @@
-import AboutBlock from "../about-block/AboutBlock";
 import styles from "../about-section/AboutSection.module.scss";
-import imgContext from "../../../assets/images/img-contexte.webp";
-import imgParcours from "../../../assets/images/img-parcours.webp";
-import imgStack from "../../../assets/images/img-stack2.webp";
-import imgAmbitions from "../../../assets/images/img-ambitions.webp";
+import profile from "../../images/profil-image.webp";
 
 function AboutSection() {
     return (
         <>
-            <main className={styles.contenair}>
-                <h1>Mon histoire</h1>
-                <AboutBlock
-                    image={imgContext}
-                    alt={"Abel se promenant sur la plage de Seignosse, dans les Landes, avec sa chienne"}
-                    title={"Contexte"}
-                    text={
-                        <>
-                            Toujours en quête de nouveaux défis, je me suis installé sur la côte Atlantique pour apprendre une nouvelle langue et
-                            vivre de nouvelles expériences, tout en poursuivant ma passion pour le surf.<br></br>
-                            <br></br> Mon intérêt pour la programmation est né lorsque, travaillant comme coordinateur logistique, un bug m’a amené à
-                            collaborer avec des développeurs : ce moment a déclenché une véritable étincelle et a éveillé ma curiosité pour le code.
-                        </>
-                    }
-                />
-                <AboutBlock
-                    image={imgParcours}
-                    alt={"Abel réalisant une manœuvre en paddle surf durant sa période de moniteur de sports nautiques"}
-                    title={"Parcours profesionnels"}
-                    text={
-                        <>
-                            Mon parcours a toujours été guidé par le sport et l’enseignement. J’ai passé sept ans à encadrer des disciplines
-                            nautiques, coordonner des équipes et gérer un centre, tout en restant en contact avec la nature et les personnes.<br></br>
-                            <br></br> Ma formation en éducation primaire m’a apporté des compétences pédagogiques, psychologiques et méthodologiques
-                            solides. Aujourd’hui, je mets ces acquis et cette expérience au service de ma reconversion vers le développement web, un
-                            domaine où je peux allier rigueur, curiosité et goût pour les défis."
-                        </>
-                    }
-                    reverse
-                />
-                <AboutBlock
-                    image={imgStack}
-                    alt={"Écran affichant un éditeur de code."}
-                    title={"Methodologie et stack"}
-                    text={
-                        <>
-                            Ayant principalement travaillé en solo, j’ai appris à apprécier l’organisation et le suivi rigoureux des projets,
-                            notamment grâce aux méthodes agiles et à l’utilisation d’un tableau Kanban.<br></br>
-                            <br></br> Bien que formé en full stack, c’est React qui me passionne le plus aujourd’hui, et je suis enthousiaste à l’idée
-                            de relever de nouveaux défis, d’apprendre constamment et de contribuer à des projets concrets et innovants."
-                        </>
-                    }
-                />
-                <AboutBlock
-                    image={imgAmbitions}
-                    alt={"Image affichant, en format JS : si le cerveau n’est pas vide, continue à coder, sinon, demande un café."}
-                    title={"Projets et ambitions"}
-                    text={
-                        <>
-                            Mon rêve en tant que développeur est de créer une application pour les établissements scolaires qui motive les élèves via
-                            la gamification et une interface en pixel art, tout en facilitant l’organisation et le contact avec les parents.<br></br>
-                            <br></br> Pour y parvenir, je commence par travailler avec d’autres développeurs, réaliser des projets web pour de petites
-                            entreprises et aider les indépendants, afin d’acquérir expérience et contacts pour concrétiser mon objectif.
-                        </>
-                    }
-                    reverse
-                />
-            </main>
+            <section className={styles.contenair}>
+                <h2>Bonjour, je suis Abel.</h2>
+                <div className={styles.flex}>
+                    <div className={styles.textDistribution}>
+                        <h3>Développeur junior passionné par le front-end et le design d’interfaces.</h3>
+                        <span className={styles.separateur}></span>
+                        <p>
+                            J’ai découvert le monde du développement presque par hasard, ce qui a immédiatement éveillé ma curiosité. J’ai commencé à
+                            me former de manière autonome en juillet 2024, puis j’ai suivi un cursus complet de développement Full Stack que j’ai
+                            achevé en octobre 2025. Bien que je nourrisse plusieurs projets personnels, mon objectif actuel est de rejoindre une
+                            équipe afin de continuer à progresser, partager mes expériences et contribuer activement à des projets stimulants.{" "}
+                        </p>
+                        <br />
+                        <p>
+                            Avant d’être développeur, j’ai été professeur pendant la majeure partie de ma vie professionnelle. Aujourd’hui, les
+                            compétences acquises en méthodologie, adaptabilité, communication et empathie me permettent d’être structuré tout en
+                            restant flexible dans mes projets, toujours avec un objectif particulier en tête.
+                        </p>
+                        <br />
+                        Originaire d’Alicante, en Espagne, ma passion pour le surf m’a amené jusqu’à la côte atlantique française, où j’ai donné un
+                        nouvel élan à ma carrière professionnelle. Lorsqu’il ne s’agit pas de programmation, vous me trouverez probablement à la
+                        plage, sur un terrain de football ou plongé dans un jeu vidéo.
+                    </div>
+                    <img src={profile} alt="" />
+                </div>
+            </section>
         </>
     );
 }

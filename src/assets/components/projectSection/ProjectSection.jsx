@@ -16,16 +16,13 @@ function ProjectSection() {
         <section className={styles.sectionContenair}>
             <h2 className={styles.title}>Projets</h2>
 
-            <div>
-                <Filters setFilter={setFilter} />
-            </div>
-
             <div className={styles.projectsContenair}>
                 {filteredProjects.map((project, index) => (
                     <ProjectCard
                         key={project.id}
                         mainImg={project.mainImg}
                         alt={`Page d'accuel du site ${project.titre}`}
+                        overlayColor={project.overlayColor}
                         thumbnails={project.thumbnails}
                         description={project.description}
                         technologies={project.technologies}

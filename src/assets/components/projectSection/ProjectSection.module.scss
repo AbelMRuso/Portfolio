@@ -1,17 +1,24 @@
 .title {
-    text-align: center;
+    text-align: start;
+    color: var(--color-bg);
 }
 
 .sectionContenair {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
     gap: 2em;
     margin-top: 2em;
     width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(157, 191, 175, 0.4), rgba(0, 0, 0, 0.4)), /* color semitransparente */ url("../../images/project-img3.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .projectsContenair {
     display: flex;
+    width: 200vw;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;

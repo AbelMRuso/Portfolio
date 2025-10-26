@@ -7,9 +7,10 @@
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     z-index: 1000;
     animation: fadeIn 0.3s ease;
+    overflow-y: auto;
 }
 
 .modal {
@@ -19,7 +20,7 @@
     background-color: var(--color-bg-secondary);
     border-radius: 1rem;
     width: 60em;
-    height: max-content;
+    min-height: max-content;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     position: relative;

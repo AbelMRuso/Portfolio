@@ -1,0 +1,59 @@
+.carrousel {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 2.5em;
+
+    p {
+        position: absolute;
+        font-weight: bold;
+        color: var(--color-text);
+        text-shadow: 0.1em 0.1em 0.2em black;
+        bottom: 2em;
+        left: 50%;
+    }
+    button {
+        font-size: 2rem;
+        width: 4rem;
+        height: 4rem;
+        opacity: 0.8;
+        color: var(--color-text);
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+}
+
+.carrouselImg {
+    width: 100%;
+    height: 30em;
+    border-radius: 2em;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.buttonLeft {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+    transition: filter 0.2s ease;
+}
+.buttonLeft:hover {
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.8));
+}
+
+.buttonRight {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+    transition: filter 0.2s ease;
+}
+.buttonRight:hover {
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.8));
+}
+
+.marginTop {
+    margin-top: 2em;
+}

@@ -1,15 +1,10 @@
 import ProjectCard from "../project-card/ProjectCard";
 import styles from "../projectSection/ProjectSection.module.scss";
 import projects from "../../data/data.json";
-import Filters from "../filters/Filters";
 import Modal from "../modal/Modal";
 import { useState } from "react";
 
 function ProjectSection() {
-    const [filter, setFilter] = useState("all");
-
-    const filteredProjects = projects.filter((project) => (filter === "all" ? true : project.categories.includes(filter)));
-
     const [selectedProject, setSelectedProject] = useState(null);
 
     return (
@@ -17,7 +12,7 @@ function ProjectSection() {
             <h2 className={styles.title}>Projets</h2>
 
             <div className={styles.projectsContenair}>
-                {filteredProjects.map((project, index) => (
+                {projects.map((project, index) => (
                     <ProjectCard
                         key={project.id}
                         mainImg={project.mainImg}

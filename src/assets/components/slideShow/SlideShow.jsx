@@ -7,7 +7,11 @@ function SlideShow({ pictures }) {
 
     return (
         <div className={styles.carrousel}>
-            <img className={styles.carrouselImg} key={showImage} src={pictures[showImage]} alt="" />
+            <div className={styles.imageWrapper}>
+                {pictures.map((pic, index) => (
+                    <img key={index} src={pic} alt="" className={`${styles.carrouselImg} ${index === showImage ? styles.active : ""}`} />
+                ))}{" "}
+            </div>
             {pictures.length > 1 && (
                 <>
                     <p className={styles.hidden}>

@@ -1,8 +1,22 @@
 import { FaTimes } from "react-icons/fa";
 import styles from "../modal/Modal.module.scss";
 import SlideShow from "../slideShow/SlideShow";
+import { useEffect } from "react";
 
 function Modal({ isOpen, onClose, project }) {
+    // Bloquear scroll de fondo
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        // Limpiar al desmontar
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [isOpen]);
     if (!isOpen) return null;
 
     return (

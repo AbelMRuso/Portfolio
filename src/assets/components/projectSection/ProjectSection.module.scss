@@ -14,15 +14,93 @@
     background-image: linear-gradient(rgba(157, 191, 175, 0.4), rgba(0, 0, 0, 0.4)), /* color semitransparente */ url("../../images/project-img3.jpg");
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .projectsContenair {
     display: flex;
     width: 100%;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 3em;
     padding: 1em;
     padding-bottom: 4em;
+}
+
+.projectsContenair::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; // línea en el centro
+    transform: translateX(-50%);
+    width: 4px; // grosor de la línea
+    background-color: var(--color-accent-light);
+    z-index: 0; // detrás de los bloques
+    border-radius: 2px; // opcional, bordes redondeados
+    margin: 4rem 0;
+}
+
+.timelineItem {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    font-size: 2rem;
+    color: var(--color-text);
+}
+
+.arrow {
+    font-size: 2rem;
+    color: var(--color-text);
+}
+
+.dateContent {
+    position: relative;
+    border: 2px solid var(--color-accent-light);
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    background-color: var(--overlay-color, rgba(0, 0, 0, 0.4));
+    color: var(--color-text);
+
+    // Triángulo apuntando a la tarjeta
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 1rem solid transparent; // tamaño de la punta
+        transform: translateY(-50%);
+    }
+}
+
+.timelineItem:nth-child(odd) .dateContent {
+    left: -50%; /* al centro del timelineItem */
+    transform: translate(100%, -50%); /* lo deja a la derecha */
+}
+
+.timelineItem:nth-child(even) .dateContent {
+    left: 50%; /* al centro del timelineItem */
+    transform: translate(-100%, -50%); /* lo empuja hacia la izquierda */
+}
+
+.rowNormal {
+    flex-direction: row; // fecha a la izquierda, tarjeta a la derecha
+}
+
+.rowReverse {
+    flex-direction: row-reverse; // fecha a la derecha, tarjeta a la izquierda
+}
+
+.rowNormal .dateContent::after {
+    left: 100%; // al lado derecho de la fecha
+    border-left-color: var(--color-accent-light); // color de la punta
+}
+
+.rowReverse .dateContent::after {
+    right: 100%; // al lado izquierdo de la fecha
+    border-right-color: var(--color-accent-light); // color de la punta
 }

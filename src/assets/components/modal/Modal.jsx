@@ -17,6 +17,7 @@ function Modal({ isOpen, onClose, project }) {
             document.body.style.overflow = "auto";
         };
     }, [isOpen]);
+
     if (!isOpen) return null;
 
     return (

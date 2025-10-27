@@ -104,3 +104,27 @@
     right: 100%; // al lado izquierdo de la fecha
     border-right-color: var(--color-accent-light); // color de la punta
 }
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .projectsContenair::before {
+        left: 10%;
+    }
+    .timelineItem {
+        flex-direction: column;
+        height: 100%;
+    }
+    .timelineItem .dateContent {
+        left: 10%;
+    }
+
+    .timelineItem .dateContent::after {
+        content: "";
+        position: absolute;
+        left: -1rem; // coloca la punta a la izquierda del bloque
+        width: 0;
+        height: 0;
+        border: 0.5rem solid transparent; // tamaño de la punta
+        border-left-color: var(--color-accent-light); // color de la punta
+        transform: rotate(180deg); // apunta hacia la izquierda
+    }
+}

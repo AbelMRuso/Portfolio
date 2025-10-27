@@ -1,6 +1,6 @@
 .card {
     width: 30em;
-    height: 50vh;
+    height: 20em;
     border: solid 1px var(--color-bg);
     border-radius: 80px 80px;
     overflow: hidden;
@@ -59,4 +59,14 @@
 .content button {
     width: fit-content;
     color: var(--color-bg);
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .card {
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+    }
 }

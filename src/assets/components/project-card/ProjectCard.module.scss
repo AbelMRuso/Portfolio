@@ -1,10 +1,11 @@
 .card {
-    width: 30em;
-    height: 50vh;
+    width: 24rem;
+    height: 18rem;
     border: solid 1px var(--color-bg);
-    border-radius: 80px 80px;
+    border-radius: 60px;
     overflow: hidden;
     position: relative;
+    transition: all 0.3s ease;
 
     img {
         width: 100%;
@@ -16,7 +17,7 @@
 }
 
 .text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -59,4 +60,34 @@
 .content button {
     width: fit-content;
     color: var(--color-bg);
+}
+
+@media (max-width: 1023px) {
+    .overlay .content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .card img {
+        filter: brightness(50%); /* la imagen se oscurece */
+        transition: filter 0.3s ease;
+    }
+}
+
+@media (max-width: 460px) {
+    .card {
+        width: 18rem;
+        height: 14rem;
+    }
+    .text {
+        font-size: 0.8rem;
+    }
+    .overlay {
+        padding: 2.5rem;
+    }
+
+    .overlay .content {
+        justify-content: center;
+        gap: 1.5rem;
+    }
 }

@@ -6,15 +6,19 @@ import { useEffect } from "react";
 function Modal({ isOpen, onClose, project }) {
     // Bloquear scroll de fondo
     useEffect(() => {
+        const html = document.documentElement;
+
         if (isOpen) {
             document.body.style.overflow = "hidden";
+            html.style.overflow = "hidden";
         } else {
             document.body.style.overflow = "auto";
+            html.style.overflow = "auto";
         }
 
-        // Limpiar al desmontar
         return () => {
             document.body.style.overflow = "auto";
+            html.style.overflow = "auto";
         };
     }, [isOpen]);
     if (!isOpen) return null;
@@ -28,20 +32,21 @@ function Modal({ isOpen, onClose, project }) {
                 <div>
                     <SlideShow pictures={project.thumbnails} />
                 </div>
+                <div className={styles.content}>
+                    <p>
+                        <strong>Contexte :</strong> {project.contexte}
+                    </p>
+                    <p>
+                        <strong>Objectifs :</strong> {project.objectifs}
+                    </p>
 
-                <p>
-                    <strong>Contexte :</strong> {project.contexte}
-                </p>
-                <p>
-                    <strong>Objectifs :</strong> {project.objectifs}
-                </p>
-
-                <p>
-                    <strong>Code du projet: </strong>
-                    <a target="_blank" className={styles.lien} href={project.resultat}>
-                        Lien vers le repository GitHub
-                    </a>
-                </p>
+                    <p>
+                        <strong>Code du projet: </strong>
+                        <a target="_blank" className={styles.lien} href={project.resultat}>
+                            Lien vers le repository GitHub
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
     );

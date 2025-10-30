@@ -1,6 +1,22 @@
 .title {
-    text-align: start;
-    color: var(--color-bg);
+    text-align: center;
+    color: var(--color-accent);
+    font-size: 4rem;
+}
+
+.separateur {
+    display: block;
+    margin: 0;
+    width: 20rem;
+    height: 4px;
+    background-color: var(--color-bg);
+}
+
+.titleContenair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
 }
 
 .sectionContenair {
@@ -14,15 +30,23 @@
     background-image: linear-gradient(rgba(157, 191, 175, 0.4), rgba(0, 0, 0, 0.4)), /* color semitransparente */ url("../../images/project-img3.jpg");
     background-size: cover;
     background-position: center;
+    transition: all 0.3s ease;
 }
 
 .projectsContenair {
     display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 3em;
-    padding: 1em;
-    padding-bottom: 4em;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+    padding: 4rem 1rem;
+}
+
+@media (max-width: 460px) {
+    .projectsContenair {
+        padding-top: 3rem;
+    }
+    .separateur {
+        width: 18rem;
+    }
 }

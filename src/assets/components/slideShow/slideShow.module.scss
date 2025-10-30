@@ -74,6 +74,7 @@
     height: 30em;
     overflow: hidden;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -97,5 +98,11 @@
 
     .buttonLeft {
         left: 0.5rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .imageWrapper {
+        height: 18rem;
     }
 }

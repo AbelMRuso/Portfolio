@@ -9,7 +9,10 @@ function ProjectSection() {
 
     return (
         <section className={styles.sectionContenair}>
-            <h2 className={styles.title}>Projets</h2>
+            <div className={styles.titleContenair}>
+                <h2 className={styles.title}>Projets</h2>
+                <span className={styles.separateur}></span>
+            </div>
 
             <div className={styles.projectsContenair}>
                 {projects.map((project, index) => (

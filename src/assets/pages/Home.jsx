@@ -3,6 +3,7 @@ import ProjectSection from "../components/projectSection/ProjectSection";
 import styles from "../pages/Home.module.scss";
 import { Helmet } from "react-helmet";
 import AboutSection from "../components/about-section/AboutSection";
+import NavSection from "../components/navSection/navSection";
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
                 />
             </Helmet>
             <main className={styles.contenair}>
+                <NavSection />
                 <AboutSection />
                 <StackSection />
                 <ProjectSection />

@@ -1,10 +1,11 @@
 import styles from "../about-section/AboutSection.module.scss";
 import profile from "../../images/profil-image.webp";
+import { forwardRef } from "react";
 
-function AboutSection() {
+const AboutSection = forwardRef((props, ref) => {
     return (
         <>
-            <section className={styles.contenair}>
+            <section ref={ref} className={styles.contenair} data-section="about">
                 <div>
                     <h2>Bonjour, je suis Abel.</h2>
                     <h3>Développeur junior passionné par le front-end et le design d’interfaces.</h3>
@@ -35,6 +36,6 @@ function AboutSection() {
             </section>
         </>
     );
-}
+});
 
 export default AboutSection;

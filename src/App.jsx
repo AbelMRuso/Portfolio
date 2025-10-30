@@ -1,12 +1,8 @@
-import Adress from "./assets/components/adress/Adress";
-import Footer from "./assets/components/footer/Footer";
-import Header from "./assets/components/header/Header";
+import Home from "./assets/pages/Home";
 function App() {
     return (
         <>
-            <Header />
-            <Adress />
-            <Footer />
+            <Home />
         </>
     );
 }

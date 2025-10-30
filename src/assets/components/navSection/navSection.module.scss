@@ -20,4 +20,10 @@
 .liste li:hover {
     color: var(--color-accent-light);
     cursor: pointer;
+    transform: scale(1.4);
+}
+
+.active {
+    color: var(--color-accent-light);
+    transform: scale(1.4);
 }

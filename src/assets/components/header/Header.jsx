@@ -1,7 +1,8 @@
 import styles from "../header/Header.module.scss";
 import { useEffect, useState } from "react";
+import { forwardRef } from "react";
 
-function Header() {
+const Header = forwardRef((props, ref) => {
     const [text, setText] = useState("");
 
     const fullText = "Transformons ensemble une idée en réalité ";
@@ -48,7 +49,7 @@ function Header() {
     };
 
     return (
-        <header className={styles.headerBanner}>
+        <header ref={ref} className={styles.headerBanner} data-section="home">
             <div className={styles.overlay}>
                 <h1>Abel Martínez Ruso</h1>
                 <h2 className={styles.subtitle}>Développeur full stack</h2>
@@ -56,6 +57,6 @@ function Header() {
             </div>
         </header>
     );
-}
+});
 
 export default Header;

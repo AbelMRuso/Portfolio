@@ -1,8 +1,14 @@
 .sectionContenair {
     display: flex;
+    padding: 2rem;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-color: var(--color-bg);
+    h2,
+    h3 {
+        color: var(--color-accent);
+    }
 }
 
 .contenair {
@@ -42,7 +48,6 @@
         padding: 1em;
         display: grid;
         grid-template-columns: 1fr;
-        margin-top: 2em;
     }
 
     .contenair {

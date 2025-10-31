@@ -7,24 +7,35 @@
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 1000;
+    align-items: flex-start;
+    z-index: 9;
     animation: fadeIn 0.3s ease;
+    overflow: hidden;
 }
 
 .modal {
     display: flex;
+    margin: 1rem 0;
     flex-direction: column;
     gap: 2em;
     background-color: var(--color-bg-secondary);
     border-radius: 1rem;
     width: 60em;
-    height: max-content;
+    height: 95vh;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     position: relative;
     animation: slideUp 0.3s ease;
     color: var(--color-text);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1.2rem;
 }
 
 .modal strong {

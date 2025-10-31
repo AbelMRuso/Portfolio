@@ -1,47 +1,16 @@
 import styles from "./ProjectCard.module.scss";
-import { FaSearch } from "react-icons/fa";
-import { useState } from "react";
 
-function ProjectCard({ mainImg, thumbnails, description, technologies, date, onOpenModal, alt }) {
-    const [selectedImg, setSelectedImg] = useState(mainImg);
-
+function ProjectCard({ mainImg, title, description, overlayColor, onOpenModal }) {
     return (
-        <article className={styles.card}>
-            <img className={styles.mainImg} src={selectedImg} alt={alt} />
+        <article className={styles.card} style={{ "--overlay-color": overlayColor }}>
+            <img src={mainImg} alt={title} />
+            <div className={styles.overlay}>
+                <div className={styles.content}>
+                    <div className={styles.text}>
+                        <p>{description}</p>
+                    </div>
 
-            <div className={styles.cardContent}>
-                <div className={styles.thumbnails}>
-                    {thumbnails.map((thumb, index) => (
-                        <div key={index} className={styles.thumbnailWrapper} onClick={() => setSelectedImg(thumb)}>
-                            <img className={styles.testImg} src={thumb} alt={`thumb-${index}`} />
-                            <div className={styles.overlay}>
-                                <FaSearch className={styles.search} />
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                <p className={styles.text}>{description}</p>
-
-                <div className={styles.tagContenair}>
-                    {technologies.map((tech, index) => (
-                        <span key={index} className={styles.tag}>
-                            {tech}
-                        </span>
-                    ))}
-                </div>
-
-                <div className={styles.infoContenair}>
-                    <p>{date}</p>
-                    <button
-                        className={styles.infoButton}
-                        onClick={(e) => {
-                            e.preventDefault();
-                            onOpenModal();
-                        }}
-                    >
-                        Plus d'infos
-                    </button>
+                    <button onClick={onOpenModal}>Détails</button>
                 </div>
             </div>
         </article>

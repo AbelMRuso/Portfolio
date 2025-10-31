@@ -1,11 +1,12 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import styles from "../footer/Footer.module.scss";
 import ContactForm from "../contactForm/ContactForm";
+import { forwardRef } from "react";
 
-function Footer() {
+const Footer = forwardRef((props, ref) => {
     return (
         <>
-            <footer className={styles.footerContenair}>
+            <footer ref={ref} className={styles.footerContenair} data-section="contact">
                 <div>
                     <ContactForm />
                 </div>
@@ -20,6 +21,6 @@ function Footer() {
             </footer>
         </>
     );
-}
+});
 
 export default Footer;

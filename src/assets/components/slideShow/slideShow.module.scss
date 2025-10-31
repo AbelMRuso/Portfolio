@@ -1,0 +1,108 @@
+.carrousel {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 2.5em;
+
+    p {
+        position: absolute;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: var(--color-text);
+        text-shadow: 0.1em 0.1em 0.2em black;
+        bottom: 2rem;
+        left: 50%;
+    }
+    button {
+        font-size: 2rem;
+        width: 4rem;
+        height: 4rem;
+        opacity: 0.8;
+        color: var(--color-text);
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+}
+
+.carrouselImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2em;
+    position: absolute; /* <-- importante */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.carrouselImg.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.buttonLeft {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+    transition: filter 0.2s ease;
+}
+.buttonLeft:hover {
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.8));
+}
+
+.buttonRight {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+    transition: filter 0.2s ease;
+}
+.buttonRight:hover {
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.8));
+}
+
+.marginTop {
+    margin-top: 2em;
+}
+
+.imageWrapper {
+    width: 100%;
+    height: 30em;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .imageWrapper {
+        height: 22rem;
+    }
+
+    .carrousel {
+        p {
+            font-size: 1rem;
+            bottom: 1rem;
+        }
+
+        button {
+            font-size: 1.2rem;
+        }
+    }
+    .buttonRight {
+        right: 0.5rem;
+    }
+
+    .buttonLeft {
+        left: 0.5rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .imageWrapper {
+        height: 18rem;
+    }
+}

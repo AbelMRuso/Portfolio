@@ -1,21 +1,51 @@
 .title {
     text-align: center;
+    color: var(--color-accent);
+    font-size: 4rem;
+}
+
+.separateur {
+    display: block;
+    margin: 0;
+    width: 20rem;
+    height: 4px;
+    background-color: var(--color-bg);
+}
+
+.titleContenair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
 }
 
 .sectionContenair {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
     gap: 2em;
     margin-top: 2em;
     width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(157, 191, 175, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/project-img3.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .projectsContenair {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 3em;
-    padding: 1em;
-    padding-bottom: 4em;
+    justify-content: center;
+    width: 100%;
+    gap: 3rem;
+    padding: 2rem 1rem;
+}
+
+@media (max-width: 460px) {
+    .projectsContenair {
+        padding-top: 3rem;
+    }
+    .separateur {
+        width: 18rem;
+    }
 }

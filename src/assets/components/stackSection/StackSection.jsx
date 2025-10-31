@@ -17,20 +17,20 @@ import {
     FaJsSquare,
 } from "react-icons/fa";
 import stackStyles from "../stackSection/StackSection.module.scss";
+import { forwardRef } from "react";
 
-function StackSection() {
+const StackSection = forwardRef((props, ref) => {
     return (
-        <section className={stackStyles.sectionContenair}>
-            <h2>Formation & Stack</h2>
+        <section ref={ref} className={stackStyles.sectionContenair} data-section="stack">
             <div className={stackStyles.contenair}>
                 <div className={stackStyles.columnContenair}>
-                    <h3>Formation</h3>
+                    <h2>Formation</h2>
                     <CardFormation layout="side" title={"Développeur Web"} subtitle={"OpenClasroom"} date={"avril - octobre 2025"}>
                         <img className={styles.logo} src={openclassroomLogo} alt="Logo du centre de formation Open Classroom" />
                     </CardFormation>
                 </div>
                 <div className={stackStyles.columnContenair}>
-                    <h3>Stack technologique</h3>
+                    <h2>Stack</h2>
                     <CardFormation
                         layout="stack"
                         title={
@@ -114,6 +114,6 @@ function StackSection() {
             </div>
         </section>
     );
-}
+});
 
 export default StackSection;

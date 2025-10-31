@@ -3,7 +3,7 @@ import ProjectSection from "../components/projectSection/ProjectSection";
 import styles from "../pages/Home.module.scss";
 import { Helmet } from "react-helmet";
 import AboutSection from "../components/about-section/AboutSection";
-import NavSection from "../components/navSection/navSection";
+import NavSection from "../components/navSection/NavSection";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import { useState, useRef, useEffect } from "react";

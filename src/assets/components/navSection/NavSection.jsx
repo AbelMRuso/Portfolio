@@ -14,7 +14,7 @@ function NavSection({ activeSection, onNavigate }) {
                 <li onClick={() => onNavigate("stack")} className={activeSection === "stack" ? styles.active : ""}>
                     <FaGraduationCap />
                 </li>
-                <li onClick={() => onNavigate("projects")} className={activeSection === "projets" ? styles.active : ""}>
+                <li onClick={() => onNavigate("projects")} className={activeSection === "projects" ? styles.active : ""}>
                     <FaCode />
                 </li>
                 <li onClick={() => onNavigate("contact")} className={activeSection === "contact" ? styles.active : ""}>

@@ -3,6 +3,7 @@ import styles from "../projectSection/ProjectSection.module.scss";
 import projects from "../../data/data.json";
 import Modal from "../modal/Modal";
 import { useState, forwardRef } from "react";
+import ReactDOM from "react-dom";
 
 const ProjectSection = forwardRef((props, ref) => {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -13,7 +14,6 @@ const ProjectSection = forwardRef((props, ref) => {
                 <h2 className={styles.title}>Projets</h2>
                 <span className={styles.separateur}></span>
             </div>
-
             <div className={styles.projectsContenair}>
                 {projects.map((project, index) => (
                     <ProjectCard
@@ -29,8 +29,10 @@ const ProjectSection = forwardRef((props, ref) => {
                     />
                 ))}
             </div>
-
-            <Modal isOpen={!!selectedProject} onClose={() => setSelectedProject(null)} project={selectedProject || {}} />
+            {ReactDOM.createPortal(
+                <Modal isOpen={!!selectedProject} onClose={() => setSelectedProject(null)} project={selectedProject || {}} />,
+                document.body // se renderiza directamente en el body
+            )}{" "}
         </section>
     );
 });

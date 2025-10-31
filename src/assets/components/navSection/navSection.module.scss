@@ -6,6 +6,7 @@
     background-color: transparent;
     border-right: transparent;
     width: 4rem;
+    opacity: 0;
 }
 
 .liste {
@@ -26,4 +27,20 @@
 .active {
     color: var(--color-accent-light);
     transform: scale(1.4);
+}
+
+@keyframes fadeSlideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section {
+    animation: fadeSlideLeft 1.2s ease forwards;
+    animation-delay: 1s;
 }

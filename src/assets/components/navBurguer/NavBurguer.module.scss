@@ -48,6 +48,20 @@
     pointer-events: auto; /* clicable al abrir */
 }
 
+.sectionListe li {
+    position: relative;
+    cursor: pointer;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: var(--color-text);
+}
+
 .hidden {
     display: none;
 }

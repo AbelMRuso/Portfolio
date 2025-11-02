@@ -6,9 +6,35 @@ import { gsap } from "gsap";
 function NavBurguer({ onNavigate }) {
     const [isOpen, setIsOpen] = useState(false);
     const iconRef = useRef(null);
+    const navRef = useRef(null);
+    const listItemRefs = useRef([]);
+    listItemRefs.current = []; // reseteamos en cada render
+
+    const handleClick = (section, index) => {
+        const li = listItemRefs.current[index];
+        const underline = li.querySelector("span");
+
+        // Animación del subrayado
+        gsap.to(underline, { width: "100%", duration: 0.2, ease: "power2.out" });
+
+        // Esperamos a que termine la animación y cerramos el menú
+        setTimeout(() => {
+            onNavigate(section);
+            setIsOpen(false);
+            // reseteamos la barra para la próxima apertura
+            gsap.set(underline, { width: 0 });
+        }, 200); // duración = la misma que la animación
+    };
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    // Ref para animar cada li
+    const addToRefs = (el) => {
+        if (el && !listItemRefs.current.includes(el)) {
+            listItemRefs.current.push(el);
+        }
     };
 
     /* verifica la talla de pantalla para ocultar el menú */
@@ -49,6 +75,21 @@ function NavBurguer({ onNavigate }) {
         }
     }, [isOpen]);
 
+    useEffect(() => {
+        if (isOpen) {
+            const tl = gsap.timeline();
+            tl.fromTo(navRef.current, { opacity: 0 }, { opacity: 0.9, duration: 0.3 });
+            tl.from(
+                listItemRefs.current,
+                { y: 20, opacity: 0, stagger: 0.2, duration: 0.4, ease: "power2.out" },
+                "-=0.1" // empieza un poquito antes de terminar el fade del nav
+            );
+        } else {
+            // Animación de cierre: simplemente fade out del nav
+            gsap.to(navRef.current, { opacity: 0, duration: 0.2 });
+        }
+    }, [isOpen]);
+
     return (
         <>
             <button className={`${styles.navButton} ${isDesktop ? styles.hidden : ""}`} onClick={toggleMenu}>
@@ -56,13 +97,18 @@ function NavBurguer({ onNavigate }) {
                     {isOpen ? <FaTimes /> : <FaBars />}
                 </span>
             </button>
-            <nav className={`${styles.navMenu} ${isOpen ? styles.open : ""}`}>
+            <nav ref={navRef} className={`${styles.navMenu} ${isOpen ? styles.open : ""}`}>
                 <ul className={styles.sectionListe}>
-                    <li onClick={() => onNavigate("home")}>INTRO</li>
-                    <li onClick={() => onNavigate("about")}>À PROPOS</li>
-                    <li onClick={() => onNavigate("stack")}>STACK</li>
-                    <li onClick={() => onNavigate("projects")}>PROJETS</li>
-                    <li onClick={() => onNavigate("contact")}>CONTACT</li>
+                    {["home", "about", "stack", "projects", "contact"].map((section, i) => (
+                        <li
+                            key={section}
+                            ref={addToRefs}
+                            onClick={() => handleClick(section, i)} // solo esta función
+                        >
+                            {section.toUpperCase()}
+                            <span className={styles.underline}></span>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </>

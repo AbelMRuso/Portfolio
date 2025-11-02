@@ -69,7 +69,7 @@ function Home() {
                     content="Portfolio d'Abel Martínez Ruso, développeur Full Stack spécialisé en React, créant des applications web modernes, performantes et accessibles."
                 />
             </Helmet>
-            <header>
+            <header className={styles.header}>
                 <Header ref={homeRef} />
                 <NavSection activeSection={activeSection} onNavigate={scrollToSection} />
                 <NavBurguer onNavigate={scrollToSection} isModalOpen={isModalOpen} />

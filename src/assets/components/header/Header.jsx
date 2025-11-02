@@ -49,13 +49,13 @@ const Header = forwardRef((props, ref) => {
     };
 
     return (
-        <header ref={ref} className={styles.headerBanner} data-section="home">
+        <div ref={ref} className={styles.headerBanner} data-section="home">
             <div className={styles.overlay}>
                 <h1>Abel Martínez Ruso</h1>
                 <h2 className={styles.subtitle}>Développeur full stack</h2>
                 <p className={styles.typeWriter}>{renderHighlightedText()}</p>
             </div>
-        </header>
+        </div>
     );
 });
 

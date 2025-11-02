@@ -5,8 +5,18 @@ import Modal from "../modal/Modal";
 import { useState, forwardRef } from "react";
 import ReactDOM from "react-dom";
 
-const ProjectSection = forwardRef((props, ref) => {
+const ProjectSection = forwardRef(({ setIsModalOpen }, ref) => {
     const [selectedProject, setSelectedProject] = useState(null);
+
+    const openModal = (project) => {
+        setSelectedProject(project);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedProject(null);
+        setIsModalOpen(false);
+    };
 
     return (
         <section ref={ref} className={styles.sectionContenair} data-section="projects">
@@ -25,12 +35,12 @@ const ProjectSection = forwardRef((props, ref) => {
                         description={project.description}
                         technologies={project.technologies}
                         date={project.date}
-                        onOpenModal={() => setSelectedProject(project)}
+                        onOpenModal={() => openModal(project)}
                     />
                 ))}
             </div>
             {ReactDOM.createPortal(
-                <Modal isOpen={!!selectedProject} onClose={() => setSelectedProject(null)} project={selectedProject || {}} />,
+                <Modal isOpen={!!selectedProject} onClose={() => closeModal(null)} project={selectedProject || {}} />,
                 document.body // se renderiza directamente en el body
             )}{" "}
         </section>

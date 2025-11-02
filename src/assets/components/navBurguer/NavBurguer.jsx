@@ -3,12 +3,12 @@ import styles from "../navBurguer/NavBurguer.module.scss";
 import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
-function NavBurguer({ onNavigate }) {
+function NavBurguer({ onNavigate, isModalOpen }) {
     const [isOpen, setIsOpen] = useState(false);
     const iconRef = useRef(null);
     const navRef = useRef(null);
     const listItemRefs = useRef([]);
-    listItemRefs.current = []; // reseteamos en cada render
+    listItemRefs.current = [];
 
     const handleClick = (section, index) => {
         const li = listItemRefs.current[index];
@@ -85,26 +85,24 @@ function NavBurguer({ onNavigate }) {
                 "-=0.1" // empieza un poquito antes de terminar el fade del nav
             );
         } else {
-            // Animación de cierre: simplemente fade out del nav
+            // Animación de cierre
             gsap.to(navRef.current, { opacity: 0, duration: 0.2 });
         }
     }, [isOpen]);
 
     return (
         <>
-            <button className={`${styles.navButton} ${isDesktop ? styles.hidden : ""}`} onClick={toggleMenu}>
-                <span ref={iconRef} className={styles.iconWrapper}>
-                    {isOpen ? <FaTimes /> : <FaBars />}
-                </span>
-            </button>
+            {!isModalOpen && (
+                <button className={`${styles.navButton} ${isDesktop ? styles.hidden : ""}`} onClick={toggleMenu}>
+                    <span ref={iconRef} className={styles.iconWrapper}>
+                        {isOpen ? <FaTimes /> : <FaBars />}
+                    </span>
+                </button>
+            )}
             <nav ref={navRef} className={`${styles.navMenu} ${isOpen ? styles.open : ""}`}>
                 <ul className={styles.sectionListe}>
                     {["home", "about", "stack", "projects", "contact"].map((section, i) => (
-                        <li
-                            key={section}
-                            ref={addToRefs}
-                            onClick={() => handleClick(section, i)} // solo esta función
-                        >
+                        <li key={section} ref={addToRefs} onClick={() => handleClick(section, i)}>
                             {section.toUpperCase()}
                             <span className={styles.underline}></span>
                         </li>

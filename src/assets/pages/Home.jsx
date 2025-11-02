@@ -7,9 +7,11 @@ import NavSection from "../components/navSection/NavSection";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import { useState, useRef, useEffect } from "react";
+import NavBurguer from "../components/navBurguer/NavBurguer";
 
 function Home() {
     const [activeSection, setActiveSection] = useState("home");
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const homeRef = useRef(null);
     const aboutRef = useRef(null);
@@ -67,12 +69,16 @@ function Home() {
                     content="Portfolio d'Abel Martínez Ruso, développeur Full Stack spécialisé en React, créant des applications web modernes, performantes et accessibles."
                 />
             </Helmet>
-            <Header ref={homeRef} />
-            <main className={styles.contenair}>
+            <header className={styles.header}>
+                <Header ref={homeRef} />
                 <NavSection activeSection={activeSection} onNavigate={scrollToSection} />
+                <NavBurguer onNavigate={scrollToSection} isModalOpen={isModalOpen} />
+            </header>
+
+            <main className={styles.contenair}>
                 <AboutSection ref={aboutRef} />
                 <StackSection ref={stackRef} />
-                <ProjectSection ref={projectsRef} />
+                <ProjectSection ref={projectsRef} setIsModalOpen={setIsModalOpen} />
             </main>
             <Footer ref={contactRef} />
         </>

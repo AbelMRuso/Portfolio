@@ -1,0 +1,59 @@
+.navButton {
+    position: fixed;
+    top: 0;
+    right: 0.1rem;
+    background: transparent;
+    font-size: 2rem;
+    color: var(--color-text);
+    padding: 1.2rem;
+    z-index: 10;
+}
+
+.navButton:hover {
+    background: transparent;
+}
+
+.iconWrapper {
+    display: inline-block;
+    transform-style: preserve-3d;
+}
+
+.navMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(142deg, rgba(151, 207, 180, 1) 0%, rgba(83, 219, 140, 1) 50%, rgba(30, 217, 201, 1) 100%);
+    opacity: 0;
+    pointer-events: none; /* no clicable cuando está cerrado */
+    z-index: 9;
+}
+
+.sectionListe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding-top: 6rem;
+    font-size: 2rem;
+    color: var(--color-text);
+}
+
+.navMenu.open {
+    opacity: 0.9;
+    pointer-events: auto; /* clicable al abrir */
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 912px) {
+    .navButton {
+        display: none;
+    }
+}

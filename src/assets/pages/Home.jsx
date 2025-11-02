@@ -7,6 +7,7 @@ import NavSection from "../components/navSection/NavSection";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import { useState, useRef, useEffect } from "react";
+import NavBurguer from "../components/navBurguer/NavBurguer";
 
 function Home() {
     const [activeSection, setActiveSection] = useState("home");
@@ -70,6 +71,7 @@ function Home() {
             <header>
                 <Header ref={homeRef} />
                 <NavSection activeSection={activeSection} onNavigate={scrollToSection} />
+                <NavBurguer onNavigate={scrollToSection} />
             </header>
 
             <main className={styles.contenair}>

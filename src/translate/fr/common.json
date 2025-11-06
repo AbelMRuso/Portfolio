@@ -1,0 +1,36 @@
+{
+    "header": {
+        "title": "",
+        "subTitle": "",
+        "sentence": ""
+    },
+
+    "about": {
+        "title": "",
+        "subTitle": "",
+        "paragraph1": "",
+        "paragraph2": "",
+        "paragraph3": ""
+    },
+
+    "stackSection": {
+        "formationTitle": "",
+        "stackTitle": ""
+    },
+
+    "formation": {
+        "title": "",
+        "subtitle": "",
+        "date": ""
+    },
+
+    "projects": {
+        "title": ""
+    },
+
+    "contactForm": {
+        "name": "",
+        "email": "",
+        "message": ""
+    }
+}

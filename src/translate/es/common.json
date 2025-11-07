@@ -2,7 +2,8 @@
     "header": {
         "title": "Abel Martínez Ruso",
         "subTitle": "Desarrollador full stack",
-        "sentence": "Hagamos juntos de una idea una realidad"
+        "typewriterText": "Hagamos juntos de una idea una realidad ",
+        "highlightWords": ["idea", "realidad"]
     },
 
     "about": {

@@ -2,18 +2,20 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "../navBurguer/NavBurguer.module.scss";
 import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { useTranslation } from "react-i18next";
 
 function NavBurguer({ onNavigate, isModalOpen }) {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const iconRef = useRef(null);
     const navRef = useRef(null);
     const listItemRefs = useRef([]);
     listItemRefs.current = [];
+    const [activeIndex, setActiveIndex] = useState(null);
 
     const handleClick = (section, index) => {
         const li = listItemRefs.current[index];
         const underline = li.querySelector("span");
-
         // Animación del subrayado
         gsap.to(underline, { width: "100%", duration: 0.2, ease: "power2.out" });
 
@@ -90,6 +92,12 @@ function NavBurguer({ onNavigate, isModalOpen }) {
         }
     }, [isOpen]);
 
+    useEffect(() => {
+        if (!isOpen) {
+            setActiveIndex(null); // Reset al cerrar menú
+        }
+    }, [isOpen]);
+
     return (
         <>
             {!isModalOpen && (
@@ -102,8 +110,9 @@ function NavBurguer({ onNavigate, isModalOpen }) {
             <nav ref={navRef} className={`${styles.navMenu} ${isOpen ? styles.open : ""}`}>
                 <ul className={styles.sectionListe}>
                     {["home", "about", "stack", "projects", "contact"].map((section, i) => (
-                        <li key={section} ref={addToRefs} onClick={() => handleClick(section, i)}>
-                            {section.toUpperCase()}
+                        <li key={section} ref={addToRefs} onClick={() => handleClick(section, i)} className={activeIndex === i ? styles.active : ""}>
+                            {t(`navBurguer.${section}`).toUpperCase()}
+
                             <span className={styles.underline}></span>
                         </li>
                     ))}

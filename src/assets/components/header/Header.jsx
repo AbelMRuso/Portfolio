@@ -4,17 +4,19 @@ import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 
 const Header = forwardRef((props, ref) => {
-    const { t } = useTranslation("common");
+    const { t, i18n } = useTranslation("common");
 
     const [text, setText] = useState("");
 
-    const fullText = "Transformons ensemble une idée en réalité ";
-    const highlightWords = ["idée", "réalité"];
+    const fullText = t("header.typewriterText");
+    const highlightWords = t("header.highlightWords", { returnObjects: true });
 
     //renderiza el texto estilo typewriting con un delay
     useEffect(() => {
         let index = 0;
         let interval;
+
+        setText("");
 
         const timeout = setTimeout(() => {
             interval = setInterval(() => {
@@ -31,7 +33,7 @@ const Header = forwardRef((props, ref) => {
             clearInterval(interval);
             clearTimeout(timeout);
         };
-    }, []); // hace que se ejecute una sola vez al montar el componente
+    }, [fullText, i18n.language]); // hace que se ejecute una sola vez al montar el componente
 
     // Función para renderizar el texto con palabras resaltadas
     const renderHighlightedText = () => {
@@ -42,7 +44,7 @@ const Header = forwardRef((props, ref) => {
             if (highlightWords.includes(cleanWord)) {
                 return (
                     <span key={i} className={styles.highlight}>
-                        {word}{" "}
+                        {word + " "}
                     </span>
                 );
             } else {

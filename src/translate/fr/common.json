@@ -2,7 +2,8 @@
     "header": {
         "title": "Abel Martínez Ruso",
         "subTitle": "Développeur full stack",
-        "sentence": "Transformons ensemble une idée en réalité"
+        "typewriterText": "Transformons ensemble une idée en réalité ",
+        "highlightWords": ["idée", "réalité"]
     },
 
     "about": {

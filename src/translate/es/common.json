@@ -6,7 +6,7 @@
     },
 
     "about": {
-        "title": "Hola!, aquí Abel,",
+        "title": "Hola! soy Abel,",
         "subTitle": "desarrollador junior apasionado por el front-end y el diseño de interfaces",
         "paragraph1": "Llegado al mundo de la programación por casualidad, comencé a formarme de forma autónoma en julio de 2024 y conseguí mi título de desarrollador en Octubre de 2025. Hoy, además de nutrir pequeños proyectos personales, busco formar parte de un equipo para poder aportar lo mejor de mi y seguir progresando al lado de profesionales del sector.",
         "paragraph2": "Mi anterior oficio ligado al mundo de la educación me ha permitido desarrollar profundamente habilidades comunicativas, de empatía, de adaptabilidad y entendimiento, pilares que creo fundamentales en el mundo de la programación y del trabajo en equipo.",
@@ -14,22 +14,22 @@
     },
 
     "stackSection": {
-        "formationTitle": "Formación",
-        "stackTitle": "Stack"
+        "formationTitle": "Formación"
     },
 
     "formation": {
         "title": "Desarrollador web",
         "formationCenter": "OpenClassrooms",
-
         "date": "Abril - octubre 2025"
     },
 
     "projects": {
-        "title": "Proyectos"
+        "title": "Proyectos",
+        "button": "Detalles"
     },
 
     "contactForm": {
+        "title": "¿Una idea, un proyecto? Contáctame",
         "name": "Nombre",
         "email": "Email",
         "message": "Mensaje"

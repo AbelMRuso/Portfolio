@@ -1,8 +1,11 @@
 import styles from "../header/Header.module.scss";
 import { useEffect, useState } from "react";
 import { forwardRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const Header = forwardRef((props, ref) => {
+    const { t } = useTranslation("common");
+
     const [text, setText] = useState("");
 
     const fullText = "Transformons ensemble une idée en réalité ";
@@ -51,8 +54,8 @@ const Header = forwardRef((props, ref) => {
     return (
         <div ref={ref} className={styles.headerBanner} data-section="home">
             <div className={styles.overlay}>
-                <h1>Abel Martínez Ruso</h1>
-                <h2 className={styles.subtitle}>Développeur full stack</h2>
+                <h1>{t("header.title")}</h1>
+                <h2 className={styles.subtitle}>{t("header.subTitle")}</h2>
                 <p className={styles.typeWriter}>{renderHighlightedText()}</p>
             </div>
         </div>

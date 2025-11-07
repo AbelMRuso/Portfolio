@@ -19,14 +19,17 @@
 
     "formation": {
         "title": "Développeur web",
+        "formationCenter": "OpenClassrooms",
         "date": "Avril - octobre 2025"
     },
 
     "projects": {
-        "title": "Projets"
+        "title": "Projets",
+        "button": "Détails"
     },
 
     "contactForm": {
+        "title": "¿Une idée, un projet? Contactez-moi",
         "name": "Nom",
         "email": "Adresse mail",
         "message": "Message"

@@ -18,14 +18,16 @@ import {
 } from "react-icons/fa";
 import stackStyles from "../stackSection/StackSection.module.scss";
 import { forwardRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const StackSection = forwardRef((props, ref) => {
+    const { t } = useTranslation("common");
     return (
         <section ref={ref} className={stackStyles.sectionContenair} data-section="stack">
             <div className={stackStyles.contenair}>
                 <div className={stackStyles.columnContenair}>
-                    <h2>Formation</h2>
-                    <CardFormation layout="side" title={"Développeur Web"} subtitle={"OpenClasroom"} date={"avril - octobre 2025"}>
+                    <h2>{t("stackSection.formationTitle")}</h2>
+                    <CardFormation layout="side" title={t("formation.title")} subtitle={t("formation.formationCenter")} date={t("formation.date")}>
                         <img className={styles.logo} src={openclassroomLogo} alt="Logo du centre de formation Open Classroom" />
                     </CardFormation>
                 </div>

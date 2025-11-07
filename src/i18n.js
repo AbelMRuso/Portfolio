@@ -17,8 +17,8 @@ i18n.use(initReactI18next).init({
             projects: projectsES,
         },
     },
-    lng: "fr", // idioma inicial
-    fallbackLng: "fr", // fallback
+    lng: "es", // idioma inicial
+    fallbackLng: "es", // fallback
     ns: ["common", "projects"],
     defaultNS: "common",
     interpolation: {

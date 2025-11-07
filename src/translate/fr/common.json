@@ -32,7 +32,8 @@
         "title": "¿Une idée, un projet? Contactez-moi",
         "name": "Nom",
         "email": "Adresse mail",
-        "message": "Message"
+        "message": "Message",
+        "button": "Envoyer"
     },
 
     "navBurguer": {
@@ -41,5 +42,12 @@
         "stack": "Stack",
         "projects": "Projets",
         "contact": "Contact"
+    },
+
+    "modal": {
+        "context": "Contexte",
+        "objectives": "Objectifs",
+        "code": "Code du projet",
+        "link": "Lien vers le repository Github"
     }
 }

@@ -33,7 +33,7 @@
 
 a {
     font-weight: 500;
-    color: var(--color-link);
+    color: var(--color-accent);
     text-decoration: inherit;
     cursor: pointer;
 }

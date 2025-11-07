@@ -45,7 +45,7 @@ export default function ContactForm() {
                 <label htmlFor="message">{t("contactForm.message")}</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                 <div className={styles.button}>
-                    <button type="submit">Envoyer</button>
+                    <button type="submit">{t("contactForm.button")}</button>
                 </div>
             </form>
             {statusMsg && <p className={styles.statusMsg}>{statusMsg}</p>}

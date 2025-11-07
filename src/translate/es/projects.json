@@ -11,27 +11,27 @@
         "description": "Web de arquitecta de interiores que incluye login y gestion de formularios mediante JavaScript.",
         "context": "Proyecto de formación para la realización del portfolio de una arquitecta de interiores. Una base de codigo front-end y back-end viene dada en el proyecto así como la documentación Swagger para consumir la API relacionada.",
         "objectives": "Implementar un login y la gestión de archivos mediante funciones asínconas y fetch, así como la actualización dinámica de la web según nuestras acciones",
-        "date": "Mai 2025"
+        "date": "Mayo 2025"
     },
     "project3": {
         "title": "Nina Carducci",
-        "description": "Debug et optimisation d'une web de photographe avec Lighthouse, Rich Snippets et Wave.",
-        "context": "En tant que développeur web freelance, j’interviens sur le site de la photographe Nina Carducci afin d’optimiser ses performances, son référencement et son accessibilité. Le projet repose sur l’analyse d’un audit initial, la correction de bugs existants et la mise en œuvre d’améliorations techniques sur le code front-end et back-end fourni, en collaboration avec la cliente.",
-        "objectives": "Les objectifs du projet consistent à rendre le site plus rapide et performant, à renforcer sa visibilité grâce au SEO et au référencement local, à intégrer les metas pour les réseaux sociaux, à corriger les dysfonctionnements existants, et à garantir une accessibilité optimale, tout en produisant un suivi détaillé des améliorations apportées.",
-        "date": "Juin 2025"
+        "description": "Web de fotografía que incluye galería, contacto y servicios.",
+        "context": "Proyecto formativo que consiste en hacer un análisis de la web a nivel de optimicación, accesibilidad y SEO, mediante herramientas como Lighthouse y Wave y realizar una mejora a nivel general implementando referenciamiento local y google rich snippets basándonos en los estándares de la web schema.org, así como la resolución de bugs.",
+        "objectives": "El objetivo principal es de aumentar la puntuación inicial de lighthouse, con una media de 60 en toddas sus áreas, hasta un míninmo de 90, además de resolver varios bugs a nivel de JavaScript que impiden el correcto funcionamiento de la web.",
+        "date": "Junio 2025"
     },
     "project4": {
         "title": "Kasa",
-        "description": "Plateforme de réservation de vacances inspirée d’Airbnb. Interface interactive avec menus, évaluations, fiches et carrousel d’images.",
-        "context": "En tant que développeur front-end freelance pour Kasa, je participe à la refonte complète du site en React, en développant les composants et routes selon les maquettes Figma et en intégrant les données des annonces fournies en JSON, tout en respectant les contraintes fonctionnelles et visuelles.",
-        "objectives": "Les objectifs du projet sont de développer l’ensemble des composants React de l’application, de configurer les routes avec React Router, de gérer dynamiquement l’affichage des annonces et des galeries d’images, et d’assurer que l’interface soit responsive et conforme aux maquettes Figma.",
-        "date": "Juillet 2025"
+        "description": "Aplicación web de reserva de vacaciones inspirada en Airbnb.",
+        "context": "Proyecto de formación realizado con React + Vite sin un código base y respetando las especificaciones de las maquetas Figma para las diferentes rutas y sus versiones responsivas. El contenido de los huéspedes y sus alojamientos viene dado en un archivo JSON que usamos para alimentar el contenido.",
+        "objectives": "Desarrollar la aplicación mediante componentes funcionales que trabajen con Hooks y props para que sean reutilizables, configurar las diferentes rutas con React Router y gestionar de forma dinámica como se muestra el contenido de la web.",
+        "date": "Julio 2025"
     },
     "project5": {
-        "title": "Mon vieux grimoire",
-        "description": "Page web de valorisation de livres avec backend Node, Express et MongoDB.",
-        "context": "En tant que développeur back-end freelance, je suis chargé de créer l’API du site « Mon Vieux Grimoire », permettant la gestion des livres, des notes utilisateurs et l’optimisation des images, en assurant la compatibilité avec le front-end React existant.",
-        "objectives": "Les objectifs principaux du projet sont de créer un serveur Express fonctionnel, de développer l’API pour gérer les livres et les notes, d’implémenter un système d’authentification sécurisé, d’assurer la gestion des fichiers utilisateurs et de permettre l’ajout de notes avec le calcul automatique de la note moyenne.",
-        "date": "Août 2025"
+        "title": "Mi viejo grimorio",
+        "description": "Web de valoración de libros realizada con Node, Express y MongoDb.",
+        "context": "Proyecto de formación en backend que consiste en levantar un servidor, crear una API y un custer en MongoDb y conectarlo con el frontend realizado con React",
+        "objectives": "Crear un servidor funcional con Express, implementar las operaciones CRUD en la API para gestionar libros, notas y usuarios, además de establecer un sistéma de autenticación de usuarios seguro.",
+        "date": "Agosto 2025"
     }
 }

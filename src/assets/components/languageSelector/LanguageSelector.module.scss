@@ -1,0 +1,57 @@
+.langContainer {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.langButton {
+    background: none;
+    text-align: start;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.2);
+        background-color: transparent;
+    }
+}
+
+.flag {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.dropdown {
+    background: none;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+
+    &:hover {
+        transform: scale(1.2);
+        background-color: transparent;
+    }
+}
+
+.option {
+    padding: 9.6px 19.2px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.2rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 912px) {
+    .langContainer {
+        display: flex;
+    }
+}

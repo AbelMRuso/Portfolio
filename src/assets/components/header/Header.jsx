@@ -2,6 +2,7 @@ import styles from "../header/Header.module.scss";
 import { useEffect, useState } from "react";
 import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "../languageSelector/LanguageSelector";
 
 const Header = forwardRef((props, ref) => {
     const { t, i18n } = useTranslation("common");
@@ -56,6 +57,7 @@ const Header = forwardRef((props, ref) => {
     return (
         <div ref={ref} className={styles.headerBanner} data-section="home">
             <div className={styles.overlay}>
+                <LanguageSelector />
                 <h1>{t("header.title")}</h1>
                 <h2 className={styles.subtitle}>{t("header.subTitle")}</h2>
                 <p className={styles.typeWriter}>{renderHighlightedText()}</p>

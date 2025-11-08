@@ -21,6 +21,7 @@ i18n.use(LanguageDetector)
             },
         },
         fallbackLng: "es",
+        lowerCaseLng: true,
         ns: ["common", "projects"],
         defaultNS: "common",
         interpolation: {

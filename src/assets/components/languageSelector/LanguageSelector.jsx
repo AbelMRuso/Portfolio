@@ -12,28 +12,27 @@ function LanguageSelector() {
     const languages = [
         { code: "es", label: "Es", flag: esFlag },
         { code: "fr", label: "Fr", flag: frFlag },
-        /* { code: "en", label: "English", flag: { enFlag } }, */
     ];
 
-    const currentLang = languages.find((lang) => lang.code === i18n.language);
+    const currentLang = languages.find((lang) => i18n.language.startsWith(lang.code));
 
     const changeLanguage = (code) => {
         i18n.changeLanguage(code);
         setOpen(false);
     };
 
+    const currentLangCode = currentLang.code;
+
     return (
         <div className={styles.langContainer}>
-            {/* Botón principal (idioma activo) */}
             <button className={styles.langButton} onClick={() => setOpen((prev) => !prev)}>
                 <img src={currentLang.flag} alt={currentLang.label} className={styles.flag} />
             </button>
 
-            {/* Dropdown */}
             {open && (
                 <ul className={styles.dropdown}>
                     {languages
-                        .filter((lang) => lang.code !== i18n.language) // no mostrar el actual
+                        .filter((lang) => lang.code !== currentLangCode)
                         .map((lang) => (
                             <li key={lang.code} onClick={() => changeLanguage(lang.code)} className={styles.option}>
                                 <img src={lang.flag} alt={lang.label} className={styles.flag} />

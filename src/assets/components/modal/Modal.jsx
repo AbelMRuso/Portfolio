@@ -2,8 +2,13 @@ import { FaTimes } from "react-icons/fa";
 import styles from "../modal/Modal.module.scss";
 import SlideShow from "../slideShow/SlideShow";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 function Modal({ isOpen, onClose, project }) {
+    const { t } = useTranslation(["common", "projects"]);
+    const modalContext = t(project.contexte);
+    const modalObjectives = t(project.objectifs);
+
     // Bloquear scroll de fondo
     useEffect(() => {
         const html = document.documentElement;
@@ -34,16 +39,16 @@ function Modal({ isOpen, onClose, project }) {
                 </div>
                 <div className={styles.content}>
                     <p>
-                        <strong>Contexte :</strong> {project.contexte}
+                        <strong>{t("modal.context")} :</strong> {modalContext}
                     </p>
                     <p>
-                        <strong>Objectifs :</strong> {project.objectifs}
+                        <strong>{t("modal.objectives")} :</strong> {modalObjectives}
                     </p>
 
                     <p>
-                        <strong>Code du projet: </strong>
+                        <strong>{t("modal.code")} </strong>
                         <a target="_blank" className={styles.lien} href={project.resultat}>
-                            Lien vers le repository GitHub
+                            {t("modal.link")}
                         </a>
                     </p>
                 </div>

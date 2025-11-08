@@ -1,8 +1,11 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "../contactForm/ContactForm.module.scss";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
+    const { t } = useTranslation("common");
+
     const form = useRef();
     const [statusMsg, setStatusMsg] = useState("");
     const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -31,18 +34,18 @@ export default function ContactForm() {
 
     return (
         <div className={styles.contenair}>
-            <h3>¿Une idée, un projet? Contactez-moi</h3>
+            <h3>{t("contactForm.title")}</h3>
             <form ref={form} onSubmit={sendEmail} className={styles.form}>
-                <label htmlFor="name">Nom</label>
+                <label htmlFor="name">{t("contactForm.name")}</label>
                 <input type="text" id="name" name="user_name" required />
 
-                <label htmlFor="email">Adresse mail</label>
+                <label htmlFor="email">{t("contactForm.email")}</label>
                 <input type="email" id="email" name="user_email" required />
 
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">{t("contactForm.message")}</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                 <div className={styles.button}>
-                    <button type="submit">Envoyer</button>
+                    <button type="submit">{t("contactForm.button")}</button>
                 </div>
             </form>
             {statusMsg && <p className={styles.statusMsg}>{statusMsg}</p>}

@@ -1,0 +1,54 @@
+{
+    "header": {
+        "title": "Abel Martínez Ruso",
+        "subTitle": "Développeur full stack",
+        "typewriterText": "Transformons ensemble une idée en réalité ",
+        "highlightWords": ["idée", "réalité"]
+    },
+
+    "about": {
+        "title": "Bonjour, je suis Abel,",
+        "subTitle": "développeur junior passionné par le front-end et le design d’interfaces.",
+        "paragraph1": "Arrivé dans le monde de la programmation un peu par hasard, j’ai commencé à me former en autonomie en juillet 2024 et j’ai obtenu mon diplôme de développeur en octobre 2025. Aujourd’hui, en plus de travailler sur de petits projets personnels, je cherche à intégrer une équipe afin de donner le meilleur de moi-même et de continuer à progresser aux côtés de professionnels du secteur.",
+        "paragraph2": "Mon ancien métier dans le domaine de l’éducation m’a permis de développer en profondeur mes compétences en communication, mon empathie, ma capacité d’adaptation et mon sens de l’écoute : des qualités que je considère essentielles dans le monde de la programmation et du travail en équipe.",
+        "paragraph3": "Originaire d’Alicante, ma passion pour le surf m’a conduit sur la côte atlantique française, où j’ai entamé une reconversion professionnelle, me suis formé et ai appris une nouvelle langue que je parle désormais couramment."
+    },
+
+    "stackSection": {
+        "formationTitle": "Formation"
+    },
+
+    "formation": {
+        "title": "Développeur web",
+        "formationCenter": "OpenClassrooms",
+        "date": "Avril - octobre 2025"
+    },
+
+    "projects": {
+        "title": "Projets",
+        "button": "Détails"
+    },
+
+    "contactForm": {
+        "title": "¿Une idée, un projet? Contactez-moi",
+        "name": "Nom",
+        "email": "Adresse mail",
+        "message": "Message",
+        "button": "Envoyer"
+    },
+
+    "navBurguer": {
+        "home": "Accueil",
+        "about": "À propos",
+        "stack": "Stack",
+        "projects": "Projets",
+        "contact": "Contact"
+    },
+
+    "modal": {
+        "context": "Contexte",
+        "objectives": "Objectifs",
+        "code": "Code du projet",
+        "link": "Lien vers le repository Github"
+    }
+}

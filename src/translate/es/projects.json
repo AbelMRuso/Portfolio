@@ -1,0 +1,37 @@
+{
+    "project1": {
+        "title": "Booki",
+        "description": "Web de reserva de vacaciones integrando HTML y CSS en base a una maqueta Figma",
+        "context": "Es un proyecto de formación consistente en integrar mediante HTML y CSS las maquetas figma correspondientes a los modelos desktop, tablet y móbil, respetando las especificaciones y restricciones técnicas establecidas. El proyecto se construyó sobre una base de código ya dada y se versionó conservando esa estructura mediante Github",
+        "objectives": "Descomponer las maquetas e integrarlas mediante código.",
+        "date": "Abril 2025"
+    },
+    "project2": {
+        "title": "Shopie Bluel",
+        "description": "Web de arquitecta de interiores que incluye login y gestion de formularios mediante JavaScript.",
+        "context": "Proyecto de formación para la realización del portfolio de una arquitecta de interiores. Una base de codigo front-end y back-end viene dada en el proyecto así como la documentación Swagger para consumir la API relacionada.",
+        "objectives": "Implementar un login y la gestión de archivos mediante funciones asínconas y fetch, así como la actualización dinámica de la web según nuestras acciones",
+        "date": "Mayo 2025"
+    },
+    "project3": {
+        "title": "Nina Carducci",
+        "description": "Web de fotografía que incluye galería, contacto y servicios.",
+        "context": "Proyecto formativo que consiste en hacer un análisis de la web a nivel de optimicación, accesibilidad y SEO, mediante herramientas como Lighthouse y Wave y realizar una mejora a nivel general implementando referenciamiento local y google rich snippets basándonos en los estándares de la web schema.org, así como la resolución de bugs.",
+        "objectives": "El objetivo principal es de aumentar la puntuación inicial de lighthouse, con una media de 60 en toddas sus áreas, hasta un míninmo de 90, además de resolver varios bugs a nivel de JavaScript que impiden el correcto funcionamiento de la web.",
+        "date": "Junio 2025"
+    },
+    "project4": {
+        "title": "Kasa",
+        "description": "Aplicación web de reserva de vacaciones inspirada en Airbnb.",
+        "context": "Proyecto de formación realizado con React + Vite sin un código base y respetando las especificaciones de las maquetas Figma para las diferentes rutas y sus versiones responsivas. El contenido de los huéspedes y sus alojamientos viene dado en un archivo JSON que usamos para alimentar el contenido.",
+        "objectives": "Desarrollar la aplicación mediante componentes funcionales que trabajen con Hooks y props para que sean reutilizables, configurar las diferentes rutas con React Router y gestionar de forma dinámica como se muestra el contenido de la web.",
+        "date": "Julio 2025"
+    },
+    "project5": {
+        "title": "Mi viejo grimorio",
+        "description": "Web de valoración de libros realizada con Node, Express y MongoDb.",
+        "context": "Proyecto de formación en backend que consiste en levantar un servidor, crear una API y un custer en MongoDb y conectarlo con el frontend realizado con React",
+        "objectives": "Crear un servidor funcional con Express, implementar las operaciones CRUD en la API para gestionar libros, notas y usuarios, además de establecer un sistéma de autenticación de usuarios seguro.",
+        "date": "Agosto 2025"
+    }
+}

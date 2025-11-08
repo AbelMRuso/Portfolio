@@ -1,115 +1,63 @@
 [
     {
         "id": "1",
-        "titre": "Booki",
-        "description": "Une web de réservation de vacances, intégrant HTML et CSS à partir de la maquette Figma.",
+        "titre": "projects:project1.title",
+        "description": "projects:project1.description",
         "overlayColor": "rgba(0, 101, 252, 0.4)",
-
-        "contexte": "Le projet consiste à intégrer les maquettes desktop, tablette et mobile fournies, tout en respectant les spécifications et contraintes techniques précisées. Pour cela, une structure de fichiers ainsi qu’une base de code HTML et CSS sont fournies. Ensuite, le projet doit être complété en conservant cette structure et versionné via GitHub.",
-        "objectifs": "Découper et intégrer une maquette Figma en HTML et CSS responsive.",
-        "technologies": ["HTML", "CSS"],
-        "competences": [
-            "Estructurer une page web avec HTML5 sémantique",
-            "Créer des interfaces responsives avec CSS Flexbox et Grid",
-            "Reproduire avec précision une maquette depuis Figma",
-            "Optimiser les images et contenus pour le web",
-            "Garantir la cohérence visuelle sur différents appareils"
-        ],
+        "contexte": "projects:project1.context",
+        "objectifs": "projects:project1.objectives",
         "resultat": "https://github.com/AbelMRuso/Projet1-Booki",
-        "ameliorations": "Optimisation des performances, amélioration de l’accessibilité et ajout d’interactions pour enrichir l’expérience utilisateur.",
         "mainImg": "/images/booki-logo2.png",
         "thumbnails": ["/images/Booki1.png", "/images/Booki2.png", "/images/Booki3.png", "/images/Booki4.png"],
-        "date": "Avril 2025",
-        "categories": ["front"]
+        "date": "projects:project1.date"
     },
     {
         "id": "2",
-        "titre": "Shopie Bluel",
-        "description": "Web d'architecture avec login pour la propriétaire et gestion de formulaires en JavaScript pur.",
+        "titre": "projects:project2.title",
+        "description": "projects:project2.description",
         "overlayColor": "rgba(147, 83, 47, 0.4)",
-
-        "contexte": "En tant que développeur front-end, j’intègre une équipe chargée de la création du site portfolio d’une architecte d’intérieur. Je dispose du Figma, du code back-end et front-end existant ainsi que du Kanban, ce qui me permet de suivre mes tâches et de commencer le développement des nouvelles fonctionnalités de manière structurée.",
-        "objectifs": "L’objectif général du projet est de développer un site portfolio fonctionnel et interactif. Les objectifs spécifiques incluent la mise en place d’un login opérationnel, la gestion des données avec le localStorage, et la création et suppression dynamique d’images.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "competences": [
-            "Création d’un système de login fonctionnel en JavaScript pur",
-            "Gestion des données utilisateur avec le localStorage",
-            "Manipulation dynamique du DOM pour créer et supprimer des images",
-            "Gestion des événements utilisateur (click, submit, etc.) en JavaScript pur",
-            "Contrôle et mise à jour des éléments de la page en temps réel avec JavaScript pur"
-        ],
+        "contexte": "projects:project2.context",
+        "objectifs": "projects:project2.objectives",
         "resultat": "https://github.com/AbelMRuso/Architecte-Sophie-Bluel",
-        "ameliorations": "Optimiser le code JavaScript pour le rendre plus modulable et réutilisable, afin de faciliter la maintenance et l’évolution du site.",
         "mainImg": "/images/sophie-logo.png",
         "thumbnails": ["/images/sophieCover.png", "/images/sophie1.png", "/images/sophie3.png", "/images/sophie4.png"],
-        "date": "Mai 2025",
-        "categories": ["front"]
+        "date": "projects:project2.date"
     },
     {
         "id": "3",
-        "titre": "Nina Carducci",
-        "description": "Debug et optimisation d'une web de photographe avec Lighthouse, Rich Snippets et Wave.",
+        "titre": "projects:project3.title",
+        "description": "projects:project3.description",
         "overlayColor": "rgba(28, 100, 116, 0.4)",
 
-        "contexte": "En tant que développeur web freelance, j’interviens sur le site de la photographe Nina Carducci afin d’optimiser ses performances, son référencement et son accessibilité. Le projet repose sur l’analyse d’un audit initial, la correction de bugs existants et la mise en œuvre d’améliorations techniques sur le code front-end et back-end fourni, en collaboration avec la cliente.",
-        "objectifs": "Les objectifs du projet consistent à rendre le site plus rapide et performant, à renforcer sa visibilité grâce au SEO et au référencement local, à intégrer les metas pour les réseaux sociaux, à corriger les dysfonctionnements existants, et à garantir une accessibilité optimale, tout en produisant un suivi détaillé des améliorations apportées.",
-        "technologies": ["HTML", "CSS", "JavaScript", "SEO", "Accessibilité"],
-        "competences": [
-            "Optimisation des performances d’un site web (audit Lighthouse)",
-            "Mise en œuvre et amélioration du référencement SEO et local (Schema.org)",
-            "Intégration des metas pour les réseaux sociaux",
-            "Identification et correction de bugs fonctionnels (analyse du code et tests manuels)",
-            "Amélioration de l’accessibilité (extension Wave) et suivi des actions"
-        ],
+        "contexte": "projects:project3.context",
+        "objectifs": "projects:project3.objectives",
         "resultat": "https://github.com/AbelMRuso/P4-Nina-Carducci",
-        "ameliorations": "Automatiser certains tests de performance et d’accessibilité pour gagner en efficacité et assurer une maintenance continue du site.",
         "mainImg": "/images/nina-carducci-logo.png",
         "thumbnails": ["/images/nina-cover.png", "/images/nina-1.png", "/images/nina-2.png", "/images/nina-3.png"],
-        "date": "Juin 2025",
-        "categories": ["front"]
+        "date": "projects:project3.date"
     },
     {
         "id": "4",
-        "titre": "Kasa",
-        "description": "Plateforme de réservation de vacances inspirée d’Airbnb. Interface interactive avec menus, évaluations, fiches et carrousel d’images.",
+        "titre": "projects:project4.title",
+        "description": "projects:project4.description",
         "overlayColor": "rgba(255, 96, 96, 0.4)",
-        "contexte": "En tant que développeur front-end freelance pour Kasa, je participe à la refonte complète du site en React, en développant les composants et routes selon les maquettes Figma et en intégrant les données des annonces fournies en JSON, tout en respectant les contraintes fonctionnelles et visuelles.",
-        "objectifs": "Les objectifs du projet sont de développer l’ensemble des composants React de l’application, de configurer les routes avec React Router, de gérer dynamiquement l’affichage des annonces et des galeries d’images, et d’assurer que l’interface soit responsive et conforme aux maquettes Figma.",
-        "technologies": ["React", "SCSS", "JavaScript"],
-        "competences": [
-            "Création de composants React réutilisables et interactifs",
-            "Configuration et gestion des routes avec React Router",
-            "Gestion des états avec useState et useEffect",
-            "Gestion des événements et interactions utilisateur dans React",
-            "Utilisation de props pour la communication entre composants"
-        ],
+        "contexte": "projects:project4.context",
+        "objectifs": "projects:project4.objectives",
         "resultat": "https://github.com/AbelMRuso/Projet_Kasa_FR",
-        "ameliorations": "Ajouter animations et transitions pour améliorer l'expérience utilisateur.",
         "mainImg": "/images/kasa-logo.png",
         "thumbnails": ["/images/kasa-cover.png", "/images/kasa-1.png", "/images/kasa-2.png", "/images/kasa-3.png"],
-        "date": "Juillet 2025",
-        "categories": ["front"]
+        "date": "projects:project4.date"
     },
     {
         "id": "5",
-        "titre": "Mon vieux grimoire",
-        "description": "Page web de valorisation de livres avec backend Node, Express et MongoDB.",
+        "titre": "projects:project5.title",
+        "description": "projects:project5.description",
         "overlayColor": "rgba(242, 227, 206, 0.4)",
-        "contexte": "En tant que développeur back-end freelance, je suis chargé de créer l’API du site « Mon Vieux Grimoire », permettant la gestion des livres, des notes utilisateurs et l’optimisation des images, en assurant la compatibilité avec le front-end React existant.",
-        "objectifs": "Les objectifs principaux du projet sont de créer un serveur Express fonctionnel, de développer l’API pour gérer les livres et les notes, d’implémenter un système d’authentification sécurisé, d’assurer la gestion des fichiers utilisateurs et de permettre l’ajout de notes avec le calcul automatique de la note moyenne.",
-        "technologies": ["Node.js", "Express", "MongoDB", "JavaScript"],
-        "competences": [
-            "Conception et configuration d’un serveur Express performant",
-            "Développement d’une API REST complète pour la gestion des livres et des notes",
-            "Implémentation d’un système d’authentification sécurisé et fiable",
-            "Gestion et optimisation des fichiers utilisateurs, notamment les images",
-            "Mise en œuvre des opérations CRUD pour les livres et les notes avec gestion des données"
-        ],
+        "contexte": "projects:project5.context",
+        "objectifs": "projects:project5.objectives",
         "resultat": "https://github.com/AbelMRuso/P6_Mon_Vieux_Grimoire",
-        "ameliorations": "Une amélioration possible serait d’implémenter un système de cache pour accélérer les réponses de l’API et réduire la charge serveur.",
         "mainImg": "/images/mon-vieux-grimoire-logo.png",
         "thumbnails": ["/images/grimoire-cover.png", "/images/grimoire-1.png", "/images/grimoire-2.png", "/images/grimoire-3.png"],
-        "date": "Août 2025",
-        "categories": ["back"]
+        "date": "projects:project5.date"
     }
 ]

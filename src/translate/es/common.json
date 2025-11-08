@@ -1,0 +1,54 @@
+{
+    "header": {
+        "title": "Abel Martínez Ruso",
+        "subTitle": "Desarrollador full stack",
+        "typewriterText": "Hagamos juntos de una idea una realidad ",
+        "highlightWords": ["idea", "realidad"]
+    },
+
+    "about": {
+        "title": "Hola! soy Abel,",
+        "subTitle": "desarrollador junior apasionado por el front-end y el diseño de interfaces",
+        "paragraph1": "Llegado al mundo de la programación por casualidad, comencé a formarme de forma autónoma en julio de 2024 y conseguí mi título de desarrollador en Octubre de 2025. Hoy, además de nutrir pequeños proyectos personales, busco formar parte de un equipo para poder aportar lo mejor de mi y seguir progresando al lado de profesionales del sector.",
+        "paragraph2": "Mi anterior oficio ligado al mundo de la educación me ha permitido desarrollar profundamente habilidades comunicativas, de empatía, de adaptabilidad y entendimiento, pilares que creo fundamentales en el mundo de la programación y del trabajo en equipo.",
+        "paragraph3": "De origen alicantino, mi pasión por el surf me llevó a vivir a la costa atlántica de Francia, lugar donde me reconvertí laboralmente, me formé y aprendí un nuevo idioma el cual hablo de forma fluida."
+    },
+
+    "stackSection": {
+        "formationTitle": "Formación"
+    },
+
+    "formation": {
+        "title": "Desarrollador web",
+        "formationCenter": "OpenClassrooms",
+        "date": "Abril - octubre 2025"
+    },
+
+    "projects": {
+        "title": "Proyectos",
+        "button": "Detalles"
+    },
+
+    "contactForm": {
+        "title": "¿Una idea, un proyecto? Contáctame",
+        "name": "Nombre",
+        "email": "Email",
+        "message": "Mensaje",
+        "button": "Enviar"
+    },
+
+    "navBurguer": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "stack": "Stack",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+
+    "modal": {
+        "context": "Contexto",
+        "objectives": "Objetivos",
+        "code": "Códio del proyecto",
+        "link": "Enlace al repositorio Github"
+    }
+}

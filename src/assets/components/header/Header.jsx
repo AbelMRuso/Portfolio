@@ -1,17 +1,23 @@
 import styles from "../header/Header.module.scss";
 import { useEffect, useState } from "react";
 import { forwardRef } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "../languageSelector/LanguageSelector";
 
 const Header = forwardRef((props, ref) => {
+    const { t, i18n } = useTranslation("common");
+
     const [text, setText] = useState("");
 
-    const fullText = "Transformons ensemble une idée en réalité ";
-    const highlightWords = ["idée", "réalité"];
+    const fullText = t("header.typewriterText");
+    const highlightWords = t("header.highlightWords", { returnObjects: true });
 
     //renderiza el texto estilo typewriting con un delay
     useEffect(() => {
         let index = 0;
         let interval;
+
+        setText("");
 
         const timeout = setTimeout(() => {
             interval = setInterval(() => {
@@ -28,7 +34,7 @@ const Header = forwardRef((props, ref) => {
             clearInterval(interval);
             clearTimeout(timeout);
         };
-    }, []); // hace que se ejecute una sola vez al montar el componente
+    }, [fullText, i18n.language]); // hace que se ejecute una sola vez al montar el componente
 
     // Función para renderizar el texto con palabras resaltadas
     const renderHighlightedText = () => {
@@ -39,7 +45,7 @@ const Header = forwardRef((props, ref) => {
             if (highlightWords.includes(cleanWord)) {
                 return (
                     <span key={i} className={styles.highlight}>
-                        {word}{" "}
+                        {word + " "}
                     </span>
                 );
             } else {
@@ -51,8 +57,9 @@ const Header = forwardRef((props, ref) => {
     return (
         <div ref={ref} className={styles.headerBanner} data-section="home">
             <div className={styles.overlay}>
-                <h1>Abel Martínez Ruso</h1>
-                <h2 className={styles.subtitle}>Développeur full stack</h2>
+                <LanguageSelector />
+                <h1>{t("header.title")}</h1>
+                <h2 className={styles.subtitle}>{t("header.subTitle")}</h2>
                 <p className={styles.typeWriter}>{renderHighlightedText()}</p>
             </div>
         </div>

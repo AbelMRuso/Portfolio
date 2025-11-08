@@ -1,35 +1,26 @@
 import styles from "../about-section/AboutSection.module.scss";
 import profile from "../../images/profil-image.webp";
 import { forwardRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutSection = forwardRef((props, ref) => {
+    const { t } = useTranslation("common");
     return (
         <>
             <section ref={ref} className={styles.contenair} data-section="about">
                 <div>
-                    <h2>Bonjour, je suis Abel.</h2>
-                    <h3>Développeur junior passionné par le front-end et le design d’interfaces.</h3>
+                    <h2>{t("about.title")}</h2>
+                    <h3>{t("about.subTitle")}</h3>
                     <span className={styles.separateur}></span>
                 </div>
 
                 <div className={styles.flex}>
                     <div className={styles.textDistribution}>
-                        <p>
-                            J’ai découvert le monde du développement presque par hasard, ce qui a immédiatement éveillé ma curiosité. J’ai commencé à
-                            me former de manière autonome en juillet 2024, puis j’ai suivi un cursus complet de développement Full Stack que j’ai
-                            achevé en octobre 2025. Bien que je nourrisse plusieurs projets personnels, mon objectif actuel est de rejoindre une
-                            équipe afin de continuer à progresser, partager mes expériences et contribuer activement à des projets stimulants.{" "}
-                        </p>
+                        <p>{t("about.paragraph1")}</p>
                         <br />
-                        <p>
-                            Avant d’être développeur, j’ai été professeur pendant la majeure partie de ma vie professionnelle. Aujourd’hui, les
-                            compétences acquises en méthodologie, adaptabilité, communication et empathie me permettent d’être structuré tout en
-                            restant flexible dans mes projets, toujours avec un objectif particulier en tête.
-                        </p>
+                        <p>{t("about.paragraph2")}</p>
                         <br />
-                        Originaire d’Alicante, en Espagne, ma passion pour le surf m’a amené jusqu’à la côte atlantique française, où j’ai donné un
-                        nouvel élan à ma carrière professionnelle. Lorsqu’il ne s’agit pas de programmation, vous me trouverez probablement à la
-                        plage, sur un terrain de football ou plongé dans un jeu vidéo.
+                        {t("about.paragraph3")}
                     </div>
                     <img src={profile} alt="" />
                 </div>

@@ -4,8 +4,11 @@ import projects from "../../data/data.json";
 import Modal from "../modal/Modal";
 import { useState, forwardRef } from "react";
 import ReactDOM from "react-dom";
+import { useTranslation } from "react-i18next";
 
 const ProjectSection = forwardRef(({ setIsModalOpen }, ref) => {
+    const { t } = useTranslation();
+
     const [selectedProject, setSelectedProject] = useState(null);
 
     const openModal = (project) => {
@@ -21,23 +24,24 @@ const ProjectSection = forwardRef(({ setIsModalOpen }, ref) => {
     return (
         <section ref={ref} className={styles.sectionContenair} data-section="projects">
             <div className={styles.titleContenair}>
-                <h2 className={styles.title}>Projets</h2>
+                <h2 className={styles.title}>{t("projects.title")}</h2>
                 <span className={styles.separateur}></span>
             </div>
             <div className={styles.projectsContenair}>
-                {projects.map((project, index) => (
-                    <ProjectCard
-                        key={project.id}
-                        mainImg={project.mainImg}
-                        alt={`Page d'accuel du site ${project.titre}`}
-                        overlayColor={project.overlayColor}
-                        thumbnails={project.thumbnails}
-                        description={project.description}
-                        technologies={project.technologies}
-                        date={project.date}
-                        onOpenModal={() => openModal(project)}
-                    />
-                ))}
+                {projects.map((project) => {
+                    const projectKey = `project${project.id}`;
+
+                    return (
+                        <ProjectCard
+                            key={project.id}
+                            mainImg={project.mainImg}
+                            alt={t(`projects:${projectKey}.title`)}
+                            overlayColor={project.overlayColor}
+                            description={t(`projects:${projectKey}.description`)}
+                            onOpenModal={() => openModal(project)}
+                        />
+                    );
+                })}
             </div>
             {ReactDOM.createPortal(
                 <Modal isOpen={!!selectedProject} onClose={() => closeModal(null)} project={selectedProject || {}} />,

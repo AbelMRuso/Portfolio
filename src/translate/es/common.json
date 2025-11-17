@@ -30,7 +30,7 @@
     },
 
     "contactForm": {
-        "title": "¿Una idea, un proyecto? Contáctame",
+        "title": "¿Una idea, un proyecto? <highlight>Contáctame</highlight>",
         "name": "Nombre",
         "email": "Email",
         "message": "Mensaje",

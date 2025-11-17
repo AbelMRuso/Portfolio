@@ -12,7 +12,7 @@ function ProjectCard({ mainImg, title, description, overlayColor, date, onOpenMo
                     <p>{description}</p>
                 </div>
                 <div className={styles.bottomContent}>
-                    <p>{date}</p>
+                    <p className={styles.dateContent}>{date}</p>
                 </div>
             </div>
         </article>

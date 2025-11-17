@@ -7,14 +7,14 @@
         "date": "Avril 2025"
     },
     "project2": {
-        "title": "Shopie Bluel",
+        "title": "Sophie Bluel arquitecture",
         "description": "Web d'architecture avec login pour la propriétaire et gestion de formulaires en JavaScript pur.",
         "context": "En tant que développeur front-end, j’intègre une équipe chargée de la création du site portfolio d’une architecte d’intérieur. Je dispose du Figma, du code back-end et front-end existant ainsi que du Kanban, ce qui me permet de suivre mes tâches et de commencer le développement des nouvelles fonctionnalités de manière structurée.",
         "objectives": "L’objectif général du projet est de développer un site portfolio fonctionnel et interactif. Les objectifs spécifiques incluent la mise en place d’un login opérationnel, la gestion des données avec le localStorage, et la création et suppression dynamique d’images.",
         "date": "Mai 2025"
     },
     "project3": {
-        "title": "Nina Carducci",
+        "title": "Nina Cadrucci photographie",
         "description": "Debug et optimisation d'une web de photographe avec Lighthouse, Rich Snippets et Wave.",
         "context": "En tant que développeur web freelance, j’interviens sur le site de la photographe Nina Carducci afin d’optimiser ses performances, son référencement et son accessibilité. Le projet repose sur l’analyse d’un audit initial, la correction de bugs existants et la mise en œuvre d’améliorations techniques sur le code front-end et back-end fourni, en collaboration avec la cliente.",
         "objectives": "Les objectifs du projet consistent à rendre le site plus rapide et performant, à renforcer sa visibilité grâce au SEO et au référencement local, à intégrer les metas pour les réseaux sociaux, à corriger les dysfonctionnements existants, et à garantir une accessibilité optimale, tout en produisant un suivi détaillé des améliorations apportées.",

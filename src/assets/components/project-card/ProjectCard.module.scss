@@ -37,7 +37,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    background-color: rgba(28, 100, 116, 0.9);
+    background-color: rgba(46, 75, 71, 0.9);
+}
+
+.dateContent {
+    color: var(--color-accent-light);
 }
 
 .bottomContent {
@@ -60,32 +64,8 @@
     color: var(--color-bg);
 }
 
-@media (max-width: 1023px) {
-    .overlay .content {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .card img {
-        filter: brightness(50%); /* la imagen se oscurece */
-        transition: filter 0.3s ease;
-    }
-}
-
 @media (max-width: 460px) {
-    .card {
-        width: 18rem;
-        height: 14rem;
-    }
     .text {
         font-size: 0.8rem;
-    }
-    .overlay {
-        padding: 2.5rem;
-    }
-
-    .overlay .content {
-        justify-content: center;
-        gap: 1.5rem;
     }
 }

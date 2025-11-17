@@ -1,5 +1,5 @@
 import styles from "../about-section/AboutSection.module.scss";
-import profile from "../../images/profil-image.webp";
+import profile from "../../images/avatar-design.webp";
 import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 

@@ -7,14 +7,14 @@
         "date": "Abril 2025"
     },
     "project2": {
-        "title": "Shopie Bluel",
+        "title": "Shopie Bluel arquitectura",
         "description": "Web de arquitecta de interiores que incluye login y gestion de formularios mediante JavaScript.",
         "context": "Proyecto de formación para la realización del portfolio de una arquitecta de interiores. Una base de codigo front-end y back-end viene dada en el proyecto así como la documentación Swagger para consumir la API relacionada.",
         "objectives": "Implementar un login y la gestión de archivos mediante funciones asínconas y fetch, así como la actualización dinámica de la web según nuestras acciones",
         "date": "Mayo 2025"
     },
     "project3": {
-        "title": "Nina Carducci",
+        "title": "Nina Carducci fotografía",
         "description": "Web de fotografía que incluye galería, contacto y servicios.",
         "context": "Proyecto formativo que consiste en hacer un análisis de la web a nivel de optimicación, accesibilidad y SEO, mediante herramientas como Lighthouse y Wave y realizar una mejora a nivel general implementando referenciamiento local y google rich snippets basándonos en los estándares de la web schema.org, así como la resolución de bugs.",
         "objectives": "El objetivo principal es de aumentar la puntuación inicial de lighthouse, con una media de 60 en toddas sus áreas, hasta un míninmo de 90, además de resolver varios bugs a nivel de JavaScript que impiden el correcto funcionamiento de la web.",

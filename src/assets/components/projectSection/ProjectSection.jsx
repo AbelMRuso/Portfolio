@@ -35,9 +35,11 @@ const ProjectSection = forwardRef(({ setIsModalOpen }, ref) => {
                         <ProjectCard
                             key={project.id}
                             mainImg={project.mainImg}
+                            title={t(project.title)}
                             alt={t(`projects:${projectKey}.title`)}
                             overlayColor={project.overlayColor}
                             description={t(`projects:${projectKey}.description`)}
+                            date={t(`projects:${projectKey}.date`)}
                             onOpenModal={() => openModal(project)}
                         />
                     );

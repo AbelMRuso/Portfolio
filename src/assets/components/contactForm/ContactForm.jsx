@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "../contactForm/ContactForm.module.scss";
 import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 export default function ContactForm() {
     const { t } = useTranslation("common");
@@ -34,19 +35,25 @@ export default function ContactForm() {
 
     return (
         <div className={styles.contenair}>
-            <h3>{t("contactForm.title")}</h3>
+            <h3>
+                <Trans i18nKey="contactForm.title" components={{ highlight: <span className={styles.highlight} /> }} />
+            </h3>
             <form ref={form} onSubmit={sendEmail} className={styles.form}>
-                <label htmlFor="name">{t("contactForm.name")}</label>
-                <input type="text" id="name" name="user_name" required />
-
-                <label htmlFor="email">{t("contactForm.email")}</label>
-                <input type="email" id="email" name="user_email" required />
-
-                <label htmlFor="message">{t("contactForm.message")}</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <div className={styles.button}>
-                    <button type="submit">{t("contactForm.button")}</button>
+                <div className={styles.nameContainer}>
+                    <div className={styles.inputContainer}>
+                        <label htmlFor="name">{t("contactForm.name")}</label>
+                        <input className={styles.inputs} type="text" id="name" name="user_name" required />
+                    </div>
+                    <div className={styles.inputContainer}>
+                        <label htmlFor="email">{t("contactForm.email")}</label>
+                        <input className={styles.inputs} type="email" id="email" name="user_email" required />
+                    </div>
                 </div>
+                <div>
+                    <label htmlFor="message">{t("contactForm.message")}</label>
+                    <textarea className={styles.messageContainer} id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">{t("contactForm.button")}</button>
             </form>
             {statusMsg && <p className={styles.statusMsg}>{statusMsg}</p>}
         </div>

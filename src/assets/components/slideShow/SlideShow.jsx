@@ -9,7 +9,13 @@ function SlideShow({ pictures }) {
         <div className={styles.carrousel}>
             <div className={styles.imageWrapper}>
                 {pictures.map((pic, index) => (
-                    <img key={index} src={pic} alt="" className={`${styles.carrouselImg} ${index === showImage ? styles.active : ""}`} />
+                    <img
+                        key={index}
+                        src={pic}
+                        loading="lazy"
+                        alt=""
+                        className={`${styles.carrouselImg} ${index === showImage ? styles.active : ""}`}
+                    />
                 ))}{" "}
             </div>
             {pictures.length > 1 && (

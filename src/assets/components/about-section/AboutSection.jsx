@@ -8,7 +8,7 @@ const AboutSection = forwardRef((props, ref) => {
     return (
         <>
             <section ref={ref} className={styles.contenair} data-section="about">
-                <div>
+                <div className={styles.titles}>
                     <h2>{t("about.title")}</h2>
                     <h3>{t("about.subTitle")}</h3>
                     <span className={styles.separateur}></span>

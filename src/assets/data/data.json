@@ -7,8 +7,8 @@
         "contexte": "projects:project1.context",
         "objectifs": "projects:project1.objectives",
         "resultat": "https://github.com/AbelMRuso/Projet1-Booki",
-        "mainImg": "/images/booki-cover2.png",
-        "thumbnails": ["/images/Booki1.png", "/images/Booki2.png", "/images/Booki3.png", "/images/Booki4.png"],
+        "mainImg": "/images/booki-cover2.webp",
+        "thumbnails": ["/images/Booki1.webp", "/images/Booki2.webp", "/images/Booki3.webp", "/images/Booki4.webp"],
         "date": "projects:project1.date"
     },
     {
@@ -19,8 +19,8 @@
         "contexte": "projects:project2.context",
         "objectifs": "projects:project2.objectives",
         "resultat": "https://github.com/AbelMRuso/Architecte-Sophie-Bluel",
-        "mainImg": "/images/sophieCover.png",
-        "thumbnails": ["/images/sophieCover.png", "/images/sophie1.png", "/images/sophie3.png", "/images/sophie4.png"],
+        "mainImg": "/images/sophieCover.webp",
+        "thumbnails": ["/images/sophieCover.webp", "/images/sophie1.webp", "/images/sophie3.webp", "/images/sophie4.webp"],
         "date": "projects:project2.date"
     },
     {
@@ -31,8 +31,8 @@
         "contexte": "projects:project3.context",
         "objectifs": "projects:project3.objectives",
         "resultat": "https://github.com/AbelMRuso/P4-Nina-Carducci",
-        "mainImg": "/images/nina-cover.png",
-        "thumbnails": ["/images/nina-cover.png", "/images/nina-1.png", "/images/nina-2.png", "/images/nina-3.png"],
+        "mainImg": "/images/nina-cover.webp",
+        "thumbnails": ["/images/nina-cover.webp", "/images/nina-1.webp", "/images/nina-2.webp", "/images/nina-3.webp"],
         "date": "projects:project3.date"
     },
     {
@@ -43,8 +43,8 @@
         "contexte": "projects:project4.context",
         "objectifs": "projects:project4.objectives",
         "resultat": "https://github.com/AbelMRuso/Projet_Kasa_FR",
-        "mainImg": "/images/kasa-cover.png",
-        "thumbnails": ["/images/kasa-cover.png", "/images/kasa-1.png", "/images/kasa-2.png", "/images/kasa-3.png"],
+        "mainImg": "/images/kasa-cover.webp",
+        "thumbnails": ["/images/kasa-cover.webp", "/images/kasa-1.webp", "/images/kasa-2.webp", "/images/kasa-3.webp"],
         "date": "projects:project4.date"
     },
     {
@@ -55,8 +55,8 @@
         "contexte": "projects:project5.context",
         "objectifs": "projects:project5.objectives",
         "resultat": "https://github.com/AbelMRuso/P6_Mon_Vieux_Grimoire",
-        "mainImg": "/images/grimoire-cover.png",
-        "thumbnails": ["/images/grimoire-cover.png", "/images/grimoire-1.png", "/images/grimoire-2.png", "/images/grimoire-3.png"],
+        "mainImg": "/images/grimoire-cover.webp",
+        "thumbnails": ["/images/grimoire-cover.webp", "/images/grimoire-1.webp", "/images/grimoire-2.webp", "/images/grimoire-3.webp"],
         "date": "projects:project5.date"
     }
 ]

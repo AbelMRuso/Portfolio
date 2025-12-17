@@ -52,3 +52,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 460px) {
+    .titles {
+        font-size: 0.8rem;
+    }
+}

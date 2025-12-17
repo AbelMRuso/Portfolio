@@ -57,7 +57,9 @@ body {
 }
 
 h1 {
-    font-family: "Lemon", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 900;
     font-size: 4em;
     color: var(--color-text);
     margin: 0;

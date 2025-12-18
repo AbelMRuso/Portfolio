@@ -33,5 +33,12 @@
         "context": "Proyecto de formación en backend que consiste en levantar un servidor, crear una API y un custer en MongoDb y conectarlo con el frontend realizado con React",
         "objectives": "Crear un servidor funcional con Express, implementar las operaciones CRUD en la API para gestionar libros, notas y usuarios, además de establecer un sistéma de autenticación de usuarios seguro.",
         "date": "Agosto 2025"
+    },
+    "project6": {
+        "title": "Nova Physio",
+        "description": "Proyecto real de web para una clínica de fisioterapia especializada en electropuntura.",
+        "context": "Creación desde cero de la página, desde su diseño integral en figma hasta su traducción a código mediante React. El proyecto consta de una web informativa sobre la clínica, sus profesionales y sus servicios e integrar opciones de contacto directo mediante teléfono o mail.",
+        "objectives": "Dar mayor visibilidad a la clínica a través de su digitalización y la implementación de técnicas de SEO, facilitando al mismo tiempo la comunicación entre fisioterapeutas y pacientes.",
+        "date": "En construcción"
     }
 }

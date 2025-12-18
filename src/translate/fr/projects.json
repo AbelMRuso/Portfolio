@@ -33,5 +33,12 @@
         "context": "En tant que développeur back-end freelance, je suis chargé de créer l’API du site « Mon Vieux Grimoire », permettant la gestion des livres, des notes utilisateurs et l’optimisation des images, en assurant la compatibilité avec le front-end React existant.",
         "objectives": "Les objectifs principaux du projet sont de créer un serveur Express fonctionnel, de développer l’API pour gérer les livres et les notes, d’implémenter un système d’authentification sécurisé, d’assurer la gestion des fichiers utilisateurs et de permettre l’ajout de notes avec le calcul automatique de la note moyenne.",
         "date": "Août 2025"
+    },
+    "project6": {
+        "title": "Nova Physio",
+        "description": "Projet réel de site web pour une clinique de physiothérapie spécialisée en électropuncture.",
+        "context": "Création complète du site web, depuis sa conception intégrale sur Figma jusqu’à sa traduction en code avec React. Le projet consiste en un site informatif présentant la clinique, ses professionnels et ses services, tout en intégrant des options de contact direct par téléphone ou par e-mail.",
+        "objectives": "Accroître la visibilité de la clinique grâce à sa digitalisation et à la mise en œuvre de techniques de SEO, tout en facilitant la communication entre les physiothérapeutes et les patients.",
+        "date": "En construction"
     }
 }

@@ -58,5 +58,22 @@
         "mainImg": "/images/grimoire-cover.webp",
         "thumbnails": ["/images/grimoire-cover.webp", "/images/grimoire-1.webp", "/images/grimoire-2.webp", "/images/grimoire-3.webp"],
         "date": "projects:project5.date"
+    },
+    {
+        "id": "6",
+        "title": "projects:project6.title",
+        "description": "projects:project6.description",
+        "overlayColor": "rgba(242, 227, 206, 0.8)",
+        "contexte": "projects:project6.context",
+        "objectifs": "projects:project6.objectives",
+        "resultat": "",
+        "mainImg": "/images/novaphysio-cover.webp",
+        "thumbnails": [
+            "/images/novaphysio-cover.webp",
+            "/images/novaphysio-services.webp",
+            "/images/novaphysio-traitement.webp",
+            "/images/novaphysio-route.webp"
+        ],
+        "date": "projects:project6.date"
     }
 ]
